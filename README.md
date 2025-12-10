@@ -4,7 +4,7 @@
 A comprehensive, modern SASS color framework featuring **36 color families** with **326+ color variations**, **92 stunning gradients**, and extensive utility classes including hover and active states.
 
 **Version**: 2.0.0  
-**Last Updated**: December 2024
+**Last Updated**: December 09th, 2024
 
 ---
 
