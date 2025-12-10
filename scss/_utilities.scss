@@ -1,0 +1,234 @@
+@use 'maps' as *;
+@use 'mixins' as mix;
+
+// Text Color Utilities
+@include mix.generate-color-utilities('color', 'text', $colors);
+
+// Background Color Utilities
+@include mix.generate-color-utilities('background-color', 'bg', $colors);
+
+// Hover Text Color Utilities
+@each $name, $value in $colors {
+  .text-hover-#{$name}:hover {
+    color: $value !important;
+  }
+}
+
+// Hover Background Color Utilities
+@each $name, $value in $colors {
+  .bg-hover-#{$name}:hover {
+    background-color: $value !important;
+  }
+}
+
+// Active Text Color Utilities (for links and navigation)
+@each $name, $value in $colors {
+
+  .text-active-#{$name}.is-active,
+  .text-active-#{$name}:active {
+    color: $value !important;
+  }
+}
+
+// Active Background Color Utilities
+@each $name, $value in $colors {
+
+  .bg-active-#{$name}.is-active,
+  .bg-active-#{$name}:active {
+    background-color: $value !important;
+  }
+}
+
+// Gradient Background Utilities
+@include mix.generate-gradient-utilities('background', 'bg-gradient', $gradients);
+
+// Border Color Utilities
+@include mix.generate-border-utilities($colors);
+
+// Border Width Utilities
+.border-0 {
+  border-width: 0 !important;
+}
+
+.border-1 {
+  border-width: 1px !important;
+}
+
+.border-2 {
+  border-width: 2px !important;
+}
+
+.border-3 {
+  border-width: 3px !important;
+}
+
+.border-4 {
+  border-width: 4px !important;
+}
+
+.border-5 {
+  border-width: 5px !important;
+}
+
+// Border Style Utilities
+.border-solid {
+  border-style: solid !important;
+}
+
+.border-dashed {
+  border-style: dashed !important;
+}
+
+.border-dotted {
+  border-style: dotted !important;
+}
+
+.border-double {
+  border-style: double !important;
+}
+
+.border-none {
+  border-style: none !important;
+}
+
+// Gradient Text Utilities
+@each $name, $gradient in $gradients {
+  .text-gradient-#{$name} {
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+  }
+}
+
+// Gradient Border Utilities
+@each $name, $gradient in $gradients {
+  .border-gradient-#{$name} {
+    border: 3px solid transparent;
+    background-image: $gradient;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+}
+
+// Opacity Utilities
+.opacity-0 {
+  opacity: 0 !important;
+}
+
+.opacity-25 {
+  opacity: 0.25 !important;
+}
+
+.opacity-50 {
+  opacity: 0.5 !important;
+}
+
+.opacity-75 {
+  opacity: 0.75 !important;
+}
+
+.opacity-100 {
+  opacity: 1 !important;
+}
+
+// Glass Morphism Utilities
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px) saturate(200%);
+  -webkit-backdrop-filter: blur(15px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.glass-subtle {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.1);
+}
+
+// Liquid Glass Effect Utilities - True Glassmorphism
+@each $name, $gradient in $gradients {
+  .liquid-glass-#{$name} {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px) saturate(200%);
+    -webkit-backdrop-filter: blur(15px) saturate(200%);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $gradient;
+      opacity: 0.15;
+      border-radius: 16px;
+      z-index: -1;
+    }
+  }
+}
+
+// Shadow Utilities
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+// Colored Shadow Utilities
+@each $name, $value in $colors {
+  .shadow-#{$name} {
+    box-shadow: 0 0.5rem 1rem rgba($value, 0.3) !important;
+  }
+
+  .shadow-lg-#{$name} {
+    box-shadow: 0 1rem 3rem rgba($value, 0.4) !important;
+  }
+}
+
+// Gradient Shadow Utilities
+.shadow-gradient {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2),
+    0 0 20px rgba(128, 0, 255, 0.3),
+    0 0 40px rgba(0, 128, 255, 0.2);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.3),
+    0 0 60px rgba(255, 255, 255, 0.2);
+}

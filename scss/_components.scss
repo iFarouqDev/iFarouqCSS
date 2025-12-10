@@ -1,0 +1,244 @@
+@use 'sass:color';
+@use 'variables' as *;
+@use 'maps' as *;
+
+// Button Components with Colors
+@each $name, $value in $colors {
+  .btn-#{$name} {
+    background-color: $value;
+    border-color: $value;
+    color: $white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: color.adjust($value, $lightness: -8%);
+      border-color: color.adjust($value, $lightness: -8%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba($value, 0.4);
+      color: $white;
+    }
+
+    &:active,
+    &.is-active {
+      background-color: color.adjust($value, $lightness: -12%);
+      border-color: color.adjust($value, $lightness: -12%);
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba($value, 0.3);
+      color: $white;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.2rem rgba($value, 0.5);
+      color: $white;
+    }
+  }
+
+  .btn-outline-#{$name} {
+    background-color: transparent;
+    border-color: $value;
+    color: $value;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: 2px solid;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $value;
+      border-color: $value;
+      color: $white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba($value, 0.3);
+    }
+
+    &:active,
+    &.is-active {
+      background-color: color.adjust($value, $lightness: -8%);
+      border-color: color.adjust($value, $lightness: -8%);
+      color: $white;
+      transform: translateY(0);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.2rem rgba($value, 0.3);
+    }
+  }
+}
+
+// Button Components with Gradients
+@each $name, $gradient in $gradients {
+  .btn-gradient-#{$name} {
+    background: $gradient;
+    border: none;
+    color: $white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: left 0.5s ease;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      filter: brightness(1.1);
+      color: $white;
+
+      &::before {
+        left: 100%;
+      }
+    }
+
+    &:active,
+    &.is-active {
+      transform: translateY(0);
+      filter: brightness(0.95);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      color: $white;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.4);
+      color: $white;
+    }
+  }
+}
+
+// Card Components with Colors
+@each $name, $value in $colors {
+  .card-#{$name} {
+    background-color: $value;
+    color: $white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba($value, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba($value, 0.3);
+    }
+  }
+}
+
+// Card Components with Gradients
+@each $name, $gradient in $gradients {
+  .card-gradient-#{$name} {
+    background: $gradient;
+    color: $white;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+// Badge Components
+@each $name, $value in $colors {
+  .badge-#{$name} {
+    background-color: $value;
+    color: $white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+  }
+}
+
+// Badge with Gradients
+@each $name, $gradient in $gradients {
+  .badge-gradient-#{$name} {
+    background: $gradient;
+    color: $white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Alert Components
+@each $name, $value in $colors {
+  .alert-#{$name} {
+    background-color: color.adjust($value, $lightness: 35%);
+    border: 1px solid color.adjust($value, $lightness: 25%);
+    border-left: 4px solid $value;
+    color: color.adjust($value, $lightness: -20%);
+    padding: 1rem 1.25rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// Progress Bar Components
+@each $name, $value in $colors {
+  .progress-#{$name} {
+    background-color: color.adjust($value, $lightness: 40%);
+    border-radius: 0.5rem;
+    height: 1rem;
+    overflow: hidden;
+
+    .progress-bar {
+      background-color: $value;
+      height: 100%;
+      transition: width 0.6s ease;
+    }
+  }
+}
+
+// Progress Bar with Gradients
+@each $name, $gradient in $gradients {
+  .progress-gradient-#{$name} {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    height: 1rem;
+    overflow: hidden;
+
+    .progress-bar {
+      background: $gradient;
+      height: 100%;
+      transition: width 0.6s ease;
+    }
+  }
+}
+
+// Pill Components (Rounded badges)
+@each $name, $value in $colors {
+  .pill-#{$name} {
+    background-color: $value;
+    color: $white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-block;
+  }
+}
