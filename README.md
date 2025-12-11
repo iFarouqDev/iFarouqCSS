@@ -57,7 +57,7 @@ A comprehensive, modern SASS color framework featuring **36 color families** wit
 <h2 class="text-gradient-candy-crush">⇅ Download the Compiled file</h2>
 <br>
 <p>
-    No need to rush with the compilation! We’ve got you covered. iFarouqCSS-v2.1.0 is all set. <a href="dist/iFarouqCSS.css.zip" download="iFarouqCSS.css.zip" type="text/css">Download</a> it now and dive right in!
+    No need to rush with the compilation! We’ve got you covered. iFarouqCSS-v2.1.0 is all set. <a target="_blank" href="ifarouqcss.ifarouq.dev" alt="iFarouqCSS Compiled File" type="text/css">Download</a> it now and dive right in!
 </p>
 <p><code class="liquid-glass-glacier-blue rounded rounded" style="padding: 15px; font-weight: bolder;">< Happy Coding 🎉👨🏻‍💻 /></code></p>
 
