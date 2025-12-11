@@ -30,7 +30,7 @@ A comprehensive, modern SASS color framework featuring **36 color families** wit
 
 ### Setup
 
-1. **Download/Clone** the framework files to your project
+1. **Download/Clone** the framework files to your project 👉🏻 <a target="_blank" href="https://github.com/iFarouqDev/iFarouqCSS" class="btn-gradient-royal" style="text-decoration: none; padding: 5px;">here...</a></li>
 2. **Place all SCSS files** in a `scss/` directory:
    ```
    scss/
@@ -51,6 +51,15 @@ A comprehensive, modern SASS color framework featuring **36 color families** wit
    ```html
    <link rel="stylesheet" href="dist/iFarouqCSS.css">
    ```
+
+---
+
+<h2 class="text-gradient-candy-crush">⇅ Download the Compiled file</h2>
+<br>
+<p>
+    No need to rush with the compilation! We’ve got you covered. iFarouqCSS-v2.1.0 is all set. <a href="dist/iFarouqCSS.css.zip" download="iFarouqCSS.css.zip" type="text/css">Download</a> it now and dive right in!
+</p>
+<p><code class="liquid-glass-glacier-blue rounded rounded" style="padding: 15px; font-weight: bolder;">< Happy Coding 🎉👨🏻‍💻 /></code></p>
 
 ---
 
