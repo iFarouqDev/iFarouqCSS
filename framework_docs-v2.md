@@ -1,9 +1,24 @@
+<div align="center">
+
+![iFarouqCSS Logo](logo/iFarouqCSS.webp)
+# iFarouqCSS
+
+**A Comprehensive Modern SASS Color Framework**
+
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/iFarouqDev/iFarouqCSS)
+[![License](https://img.shields.io/badge/license-FREE-green.svg)](LICENSE)
+[![SASS](https://img.shields.io/badge/SASS-Powered-pink.svg)](https://sass-lang.com/)
+
+**36 Color Families** • **326+ Shades** • **92 Gradients** • **Glassmorphism** • **Hover & Active States**
+
+</div>
+
 # iFarouq Color Framework Documentation
 
 A comprehensive, modern SASS color framework featuring **36 color families** with **326+ color variations**, **92 stunning gradients**, and extensive utility classes including hover and active states.
 
-**Version**: 2.0.0  
-**Last Updated**: December 2024
+**Version**: 2.1.0  
+**Last Updated**: December 09th, 2025
 
 ---
 
