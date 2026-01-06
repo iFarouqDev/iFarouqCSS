@@ -1,231 +1,281 @@
-iFarouqCSS Logo
-iFarouqCSS
-A Comprehensive Modern SASS Color Framework
+<div align="center">
 
-Version License SASS
+![iFarouqCSS Logo](logo/iFarouqCSS.webp)
+# iFarouqCSS
 
-36 Color Families • 326+ Shades • 92 Gradients • Glassmorphism • Hover & Active States
+**A Comprehensive Modern SASS Color Framework**
 
-iFarouq Color Framework Documentation
-A comprehensive, modern SASS color framework featuring 36 color families with 326+ color variations, 92 stunning gradients, and extensive utility classes including hover and active states.
+[![Version](https://img.shields.io/badge/version-2.2.1-blue.svg)](https://github.com/iFarouqDev/iFarouqCSS)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![SASS](https://img.shields.io/badge/SASS-Powered-pink.svg)](https://sass-lang.com/)
 
-Version: 2.2.1
-Last Update: December 17th, 2025
-Official Site: https://ifarouqcss.ifarouq.dev
+**36 Color Families** • **326+ Shades** • **92 Gradients** • **Glassmorphism** • **Hover & Active States**
 
-📦 Installation
-Prerequisites
-SASS/SCSS compiler (Dart Sass recommended)
-Node.js (optional, for npm scripts)
-Setup
-Download/Clone the framework files to your project
+</div>
 
-Place all SCSS files in a scss/ directory:
+# iFarouq Color Framework Documentation
 
-scss/
-├── _variables.scss
-├── _maps.scss
-├── _mixins.scss
-├── _components.scss
-├── _utilities.scss
-└── colors-framework.scss
-Compile the framework:
+A comprehensive, modern SASS color framework featuring **36 color families** with **326+ color variations**, **92 stunning gradients**, and extensive utility classes including hover and active states.
 
-sass scss/colors-framework.scss dist/iFarouqCSS.css --style=compressed
-Link in your HTML:
+**Version**: 2.2.1  
+**Last Update**: December 17th, 2025  
+**Official Site**: https://ifarouqcss.ifarouq.dev
 
-<link rel="stylesheet" href="dist/iFarouqCSS.css">
-⇅ Download the Compiled file
+---
 
-No need to rush with the compilation! We’ve got you covered. iFarouqCSS-v2.1.0 is all set. Download it now and dive right in!
+## 📦 Installation
 
-< Happy Coding 🎉👨🏻‍💻 />
+### Prerequisites
+- SASS/SCSS compiler (Dart Sass recommended)
+- Node.js (optional, for npm scripts)
 
-🎨 Color System
-36 Complete Color Families
-Each color family includes 9 full shades (100-900) for maximum flexibility:
+### Setup
 
-Primary Colors:
+1. **Download/Clone** the framework files to your project
+2. **Place all SCSS files** in a `scss/` directory:
+   ```
+   scss/
+   ├── _variables.scss
+   ├── _maps.scss
+   ├── _mixins.scss
+   ├── _components.scss
+   ├── _utilities.scss
+   └── colors-framework.scss
+   ```
 
-Blue - #0D6EFD - Modern primary blue
-Indigo - #6610F2 - Deep indigo
-Purple - #6F42C1 - Royal purple
-Pink - #F63384 - Vibrant pink
-Red - #DC3545 - Classic red
-Orange - #FD7E14 - Bright orange
-Yellow - #FFC107 - Sunny yellow
-Green - #198754 - Fresh green
-Teal - #20C997 - Aqua teal
-Cyan - #0DCAF0 - Sky cyan
-Gray - #ADB5BD - Neutral gray
-Extended Palette:
+3. **Compile the framework**:
+   ```bash
+   sass scss/colors-framework.scss dist/iFarouqCSS.css --style=compressed
+   ```
 
-Lime - #84CC16 - Electric lime
-Emerald - #10B981 - Rich emerald
-Sky - #0EA5E9 - Clear sky blue
-Violet - #8B5CF6 - Deep violet
-Fuchsia - #D946EF - Bright fuchsia
-Rose - #F43F5E - Modern rose
-Amber - #F59E0B - Warm amber
-Slate - #64748B - Cool slate
-Zinc - #71717A - Modern zinc
-Stone - #78716C - Natural stone
-Neutral - #737373 - Pure neutral
-Specialty Colors:
+4. **Link in your HTML**:
+   ```html
+   <link rel="stylesheet" href="dist/iFarouqCSS.css">
+   ```
 
-Crimson - #DC143C - Deep crimson
-Coral - #FF7F50 - Living coral
-Salmon - #FA8072 - Soft salmon
-Gold - #FFD700 - Metallic gold
-Bronze - #CD7F32 - Antique bronze
-Silver - #C0C0C0 - Polished silver
-Navy - #000080 - Classic navy
-Maroon - #800000 - Rich maroon
-Olive - #808000 - Natural olive
-Mint - #98FF98 - Fresh mint
-Lavender - #E6E6FA - Soft lavender
-Peach - #FFDAB9 - Sweet peach
-Turquoise - #40E0D0 - Tropical turquoise
-Aquamarine - #7FFFD4 - Ocean aquamarine
-Plus Black (#000) and White (#FFF)
+---
 
-Color Shade System
+<h2 class="text-gradient-candy-crush">⇅ Download the Compiled file</h2>
+<br>
+<p>
+    No need to rush with the compilation! We’ve got you covered. iFarouqCSS-v2.1.0 is all set. <a target="_blank" href="https://ifarouqcss.ifarouq.dev" alt="iFarouqCSS Compiled file">Download</a> it now and dive right in!
+</p>
+<p><code class="liquid-glass-glacier-blue rounded rounded" style="padding: 15px; font-weight: bolder;">< Happy Coding 🎉👨🏻‍💻 /></code></p>
+
+---
+
+
+## 🎨 Color System
+
+### 36 Complete Color Families
+
+Each color family includes **9 full shades** (100-900) for maximum flexibility:
+
+**Primary Colors:**
+- **Blue** - `#0D6EFD` - Modern primary blue
+- **Indigo** - `#6610F2` - Deep indigo
+- **Purple** - `#6F42C1` - Royal purple
+- **Pink** - `#F63384` - Vibrant pink
+- **Red** - `#DC3545` - Classic red
+- **Orange** - `#FD7E14` - Bright orange
+- **Yellow** - `#FFC107` - Sunny yellow
+- **Green** - `#198754` - Fresh green
+- **Teal** - `#20C997` - Aqua teal
+- **Cyan** - `#0DCAF0` - Sky cyan
+- **Gray** - `#ADB5BD` - Neutral gray
+
+**Extended Palette:**
+- **Lime** - `#84CC16` - Electric lime
+- **Emerald** - `#10B981` - Rich emerald
+- **Sky** - `#0EA5E9` - Clear sky blue
+- **Violet** - `#8B5CF6` - Deep violet
+- **Fuchsia** - `#D946EF` - Bright fuchsia
+- **Rose** - `#F43F5E` - Modern rose
+- **Amber** - `#F59E0B` - Warm amber
+- **Slate** - `#64748B` - Cool slate
+- **Zinc** - `#71717A` - Modern zinc
+- **Stone** - `#78716C` - Natural stone
+- **Neutral** - `#737373` - Pure neutral
+
+**Specialty Colors:**
+- **Crimson** - `#DC143C` - Deep crimson
+- **Coral** - `#FF7F50` - Living coral
+- **Salmon** - `#FA8072` - Soft salmon
+- **Gold** - `#FFD700` - Metallic gold
+- **Bronze** - `#CD7F32` - Antique bronze
+- **Silver** - `#C0C0C0` - Polished silver
+- **Navy** - `#000080` - Classic navy
+- **Maroon** - `#800000` - Rich maroon
+- **Olive** - `#808000` - Natural olive
+- **Mint** - `#98FF98` - Fresh mint
+- **Lavender** - `#E6E6FA` - Soft lavender
+- **Peach** - `#FFDAB9` - Sweet peach
+- **Turquoise** - `#40E0D0` - Tropical turquoise
+- **Aquamarine** - `#7FFFD4` - Ocean aquamarine
+
+Plus **Black** (`#000`) and **White** (`#FFF`)
+
+### Color Shade System
+
 Each color family follows a consistent 9-shade system:
 
-Shade	Lightness	Use Case
-100	Lightest	Backgrounds, subtle accents
-200	Very Light	Hover states, highlights
-300	Light	Secondary backgrounds
-400	Medium Light	Borders, dividers
-500	Base	Primary color (same as color name)
-600	Medium Dark	Hover states, emphasis
-700	Dark	Text on light backgrounds
-800	Very Dark	Primary text, strong emphasis
-900	Darkest	Headers, maximum contrast
-🌈 Gradient Collection - 92 Total Gradients!
-Original Collection (50 Gradients)
-Vibrant & Modern:
+| Shade | Lightness | Use Case |
+|-------|-----------|----------|
+| `100` | Lightest | Backgrounds, subtle accents |
+| `200` | Very Light | Hover states, highlights |
+| `300` | Light | Secondary backgrounds |
+| `400` | Medium Light | Borders, dividers |
+| `500` | **Base** | Primary color (same as color name) |
+| `600` | Medium Dark | Hover states, emphasis |
+| `700` | Dark | Text on light backgrounds |
+| `800` | Very Dark | Primary text, strong emphasis |
+| `900` | Darkest | Headers, maximum contrast |
 
-aurora-dream - Purple to pink aurora
-ocean-bliss - Cyan to blue ocean
-sunset-glory - Red to yellow sunset
-emerald-flow - Teal to green flow
-royal-purple - Purple to magenta
-cyber-blue - Electric blue cyber
-peachy-paradise - Peach to pink paradise
-mint-breeze - Mint green breeze
-crimson-tide - Red to pink wave
-golden-hour - Yellow to orange glow
-lavender-haze - Lavender to purple
-tropical-storm - Cyan to teal storm
-cherry-blossom - Soft pink cherry
-deep-space - Dark blue space
-neon-nights - Hot pink to orange neon
-aqua-marine - Bright cyan aquatic
-fire-opal - Red to yellow fire
-purple-haze - Purple psychedelic
-rose-gold - Rose to gold elegance
-electric-lime - Lime to cyan electric
-cosmic-fusion - Magenta to purple cosmic
-tangerine-dream - Orange tangerine
-mystic-violet - Purple to violet mystic
-turquoise-wave - Turquoise wave
-Sophisticated:
+---
 
-moonlight-serenade - Blue to black night
-candy-crush - Pink to blue candy
-rainbow-sherbet - Pink to yellow rainbow
-northern-lights - Green to blue aurora
-desert-mirage - Yellow to orange desert
-glacier-blue - Light blue glacier
-velvet-night - Dark purple velvet
-strawberry-lemonade - Cream to pink
-emerald-dream - Bright green dream
-blueberry-muffin - Purple blueberry
-phoenix-fire - Red to yellow phoenix
-tropical-paradise - Pink to cyan tropical
-midnight-city - Gray to black city
-cotton-candy - Pink to blue candy
-volcanic-ash - Gray to blue volcanic
-honey-dew - Yellow to pink honey
-arctic-frost - Green to cyan frost
-ruby-red - Deep red ruby
-forest-green - Dark purple to blue forest
-peacock-feather - Cyan peacock
-sangria-sunset - Orange to pink sangria
-sage-wisdom - Mint to pink sage
-celestial-blue - Cyan to purple celestial
-coral-reef - Pink to yellow coral
-starry-night - Blue to teal starry
-dragon-scale - Purple to magenta dragon
-Low Gradients - Custom Collection (24 Gradients)
+## 🌈 Gradient Collection - 92 Total Gradients!
+
+### Original Collection (50 Gradients)
+
+**Vibrant & Modern:**
+- `aurora-dream` - Purple to pink aurora
+- `ocean-bliss` - Cyan to blue ocean
+- `sunset-glory` - Red to yellow sunset
+- `emerald-flow` - Teal to green flow
+- `royal-purple` - Purple to magenta
+- `cyber-blue` - Electric blue cyber
+- `peachy-paradise` - Peach to pink paradise
+- `mint-breeze` - Mint green breeze
+- `crimson-tide` - Red to pink wave
+- `golden-hour` - Yellow to orange glow
+- `lavender-haze` - Lavender to purple
+- `tropical-storm` - Cyan to teal storm
+- `cherry-blossom` - Soft pink cherry
+- `deep-space` - Dark blue space
+- `neon-nights` - Hot pink to orange neon
+- `aqua-marine` - Bright cyan aquatic
+- `fire-opal` - Red to yellow fire
+- `purple-haze` - Purple psychedelic
+- `rose-gold` - Rose to gold elegance
+- `electric-lime` - Lime to cyan electric
+- `cosmic-fusion` - Magenta to purple cosmic
+- `tangerine-dream` - Orange tangerine
+- `mystic-violet` - Purple to violet mystic
+- `turquoise-wave` - Turquoise wave
+
+**Sophisticated:**
+- `moonlight-serenade` - Blue to black night
+- `candy-crush` - Pink to blue candy
+- `rainbow-sherbet` - Pink to yellow rainbow
+- `northern-lights` - Green to blue aurora
+- `desert-mirage` - Yellow to orange desert
+- `glacier-blue` - Light blue glacier
+- `velvet-night` - Dark purple velvet
+- `strawberry-lemonade` - Cream to pink
+- `emerald-dream` - Bright green dream
+- `blueberry-muffin` - Purple blueberry
+- `phoenix-fire` - Red to yellow phoenix
+- `tropical-paradise` - Pink to cyan tropical
+- `midnight-city` - Gray to black city
+- `cotton-candy` - Pink to blue candy
+- `volcanic-ash` - Gray to blue volcanic
+- `honey-dew` - Yellow to pink honey
+- `arctic-frost` - Green to cyan frost
+- `ruby-red` - Deep red ruby
+- `forest-green` - Dark purple to blue forest
+- `peacock-feather` - Cyan peacock
+- `sangria-sunset` - Orange to pink sangria
+- `sage-wisdom` - Mint to pink sage
+- `celestial-blue` - Cyan to purple celestial
+- `coral-reef` - Pink to yellow coral
+- `starry-night` - Blue to teal starry
+- `dragon-scale` - Purple to magenta dragon
+
+### Low Gradients - Custom Collection (24 Gradients)
+
 Perfect for subtle, elegant designs:
 
-sunset - Orange to coral sunset
-ocean - Blue to cyan ocean
-lavender - Pink to coral lavender
-mint - Green to lime mint
-royal - Dark blue royal
-coral - Orange to magenta coral
-tropical - Cyan to purple tropical
-flame - Red to yellow flame
-aqua - Dark teal to cyan aqua
-forest - Brown to green forest
-aurora - Cyan to blue aurora
-berry - Dark red to black berry
-peach - Pink to cream peach
-galaxy - Purple to pink galaxy
-sunrise - Red to orange sunrise
-dreamy - Light blue dreamy
-amber - Orange to yellow amber
-steel - Dark gray to light gray steel
-violet - Dark purple to lavender violet
-crystal - Green to blue crystal
-ruby - Magenta to purple ruby
-lagoon - Green to blue lagoon
-magma - Bright red to dark red magma
-cosmos - Navy to blue cosmos
-Medium Gradients - Custom Collection (18 Gradients)
+- `sunset` - Orange to coral sunset
+- `ocean` - Blue to cyan ocean
+- `lavender` - Pink to coral lavender
+- `mint` - Green to lime mint
+- `royal` - Dark blue royal
+- `coral` - Orange to magenta coral
+- `tropical` - Cyan to purple tropical
+- `flame` - Red to yellow flame
+- `aqua` - Dark teal to cyan aqua
+- `forest` - Brown to green forest
+- `aurora` - Cyan to blue aurora
+- `berry` - Dark red to black berry
+- `peach` - Pink to cream peach
+- `galaxy` - Purple to pink galaxy
+- `sunrise` - Red to orange sunrise
+- `dreamy` - Light blue dreamy
+- `amber` - Orange to yellow amber
+- `steel` - Dark gray to light gray steel
+- `violet` - Dark purple to lavender violet
+- `crystal` - Green to blue crystal
+- `ruby` - Magenta to purple ruby
+- `lagoon` - Green to blue lagoon
+- `magma` - Bright red to dark red magma
+- `cosmos` - Navy to blue cosmos
+
+### Medium Gradients - Custom Collection (18 Gradients)
+
 Balanced intensity for versatile applications:
 
-purple-dream - Lavender to pink dream
-deep-sea - Dark blue to teal sea
-royal-sky - Navy to red to yellow sky (3-color)
-midnight-bliss - Dark gray bliss
-lava-flow - Red to purple lava
-ice-candy - Teal to lavender candy
-peach-sunset - Cream to peach sunset
-electric-violet - Blue to purple electric
-oceanic-glow - Gray to blue oceanic
-mint-fusion - Green to lime fusion
-hot-pink - Red to coral pink
-cosmic-fizz - Blue to cyan fizz (3-color)
-royal-gold - Orange to yellow gold
-emerald-light - Green to blue emerald
-berry-mix - Purple to blue to mint (3-color)
-dreamy-rainbow - Yellow to coral rainbow
-candy-burst - Pink to cream burst
-liquid-crystal - Green to cyan crystal
-🛠️ Utility Classes
-Text Colors
-Apply text colors using .text-{color}-{shade}:
+- `purple-dream` - Lavender to pink dream
+- `deep-sea` - Dark blue to teal sea
+- `royal-sky` - Navy to red to yellow sky (3-color)
+- `midnight-bliss` - Dark gray bliss
+- `lava-flow` - Red to purple lava
+- `ice-candy` - Teal to lavender candy
+- `peach-sunset` - Cream to peach sunset
+- `electric-violet` - Blue to purple electric
+- `oceanic-glow` - Gray to blue oceanic
+- `mint-fusion` - Green to lime fusion
+- `hot-pink` - Red to coral pink
+- `cosmic-fizz` - Blue to cyan fizz (3-color)
+- `royal-gold` - Orange to yellow gold
+- `emerald-light` - Green to blue emerald
+- `berry-mix` - Purple to blue to mint (3-color)
+- `dreamy-rainbow` - Yellow to coral rainbow
+- `candy-burst` - Pink to cream burst
+- `liquid-crystal` - Green to cyan crystal
 
+---
+
+## 🛠️ Utility Classes
+
+### Text Colors
+
+Apply text colors using `.text-{color}-{shade}`:
+
+```html
 <p class="text-blue-500">Blue text</p>
 <p class="text-emerald-700">Dark emerald text</p>
 <h1 class="text-violet-300">Light violet heading</h1>
 <span class="text-coral-600">Coral text</span>
-All 36 color families available!
+```
 
-Background Colors
-Apply backgrounds using .bg-{color}-{shade}:
+**All 36 color families available!**
 
+### Background Colors
+
+Apply backgrounds using `.bg-{color}-{shade}`:
+
+```html
 <div class="bg-sky-500">Sky background</div>
 <div class="bg-bronze-200">Light bronze background</div>
 <section class="bg-slate-800">Dark slate section</section>
 <div class="bg-aquamarine-300">Aquamarine background</div>
-Hover Text Colors 🆕
-Change text color on hover using .text-hover-{color}-{shade}:
+```
 
+### Hover Text Colors 🆕
+
+Change text color on hover using `.text-hover-{color}-{shade}`:
+
+```html
 <a href="#" class="text-gray-700 text-hover-blue-600">
   Hover me for blue text
 </a>
@@ -237,9 +287,13 @@ Change text color on hover using .text-hover-{color}-{shade}:
 <nav>
   <a class="text-slate-600 text-hover-emerald-600">Menu Item</a>
 </nav>
-Hover Background Colors 🆕
-Change background on hover using .bg-hover-{color}-{shade}:
+```
 
+### Hover Background Colors 🆕
+
+Change background on hover using `.bg-hover-{color}-{shade}`:
+
+```html
 <div class="bg-white bg-hover-violet-100">
   Hover for violet background
 </div>
@@ -251,9 +305,13 @@ Change background on hover using .bg-hover-{color}-{shade}:
 <div class="bg-transparent bg-hover-amber-50">
   Hover Effect
 </div>
-Active Text Colors 🆕
-For navigation and links using .text-active-{color}-{shade}:
+```
 
+### Active Text Colors 🆕
+
+For navigation and links using `.text-active-{color}-{shade}`:
+
+```html
 <nav>
   <a href="#" class="text-gray-600 text-active-blue-600 is-active">
     Home (Active)
@@ -265,11 +323,15 @@ For navigation and links using .text-active-{color}-{shade}:
     Contact
   </a>
 </nav>
-The .is-active class can be toggled with JavaScript to show the active state.
+```
 
-Active Background Colors 🆕
-Background active states using .bg-active-{color}-{shade}:
+The `.is-active` class can be toggled with JavaScript to show the active state.
 
+### Active Background Colors 🆕
+
+Background active states using `.bg-active-{color}-{shade}`:
+
+```html
 <ul class="menu">
   <li class="bg-gray-100 bg-active-emerald-500 is-active">
     Dashboard (Active)
@@ -281,9 +343,13 @@ Background active states using .bg-active-{color}-{shade}:
     Profile
   </li>
 </ul>
-Gradient Backgrounds
-Apply any of the 92 gradients using .bg-gradient-{name}:
+```
 
+### Gradient Backgrounds
+
+Apply any of the 92 gradients using `.bg-gradient-{name}`:
+
+```html
 <!-- Original Collection -->
 <div class="bg-gradient-ocean-bliss">Ocean gradient</div>
 <div class="bg-gradient-dragon-scale">Dragon gradient</div>
@@ -295,35 +361,58 @@ Apply any of the 92 gradients using .bg-gradient-{name}:
 <!-- Medium Gradients -->
 <div class="bg-gradient-purple-dream">Purple Dream</div>
 <div class="bg-gradient-royal-sky">Royal Sky (3-color)</div>
-Gradient Text
-Create gradient text effects using .text-gradient-{name}:
+```
 
+### Gradient Text
+
+Create gradient text effects using `.text-gradient-{name}`:
+
+```html
 <h1 class="text-gradient-cosmic-fizz">Cosmic Text</h1>
 <p class="text-gradient-liquid-crystal">Crystal Text</p>
 <span class="text-gradient-berry-mix">Berry Text</span>
-Border Colors
-Apply border colors using .border-{color}-{shade}:
+```
 
+### Border Colors
+
+Apply border colors using `.border-{color}-{shade}`:
+
+```html
 <div class="border-2 border-solid border-rose-500">Rose border</div>
 <div class="border-3 border-dashed border-turquoise-600">Turquoise dashed</div>
-Directional borders:
+```
 
+**Directional borders:**
+```html
 <div class="border-top-gold-500">Top gold border</div>
 <div class="border-right-navy-600">Right navy border</div>
 <div class="border-bottom-mint-400">Bottom mint border</div>
 <div class="border-left-coral-500">Left coral border</div>
-Border Utilities
-Width: .border-0, .border-1, .border-2, .border-3, .border-4, .border-5
+```
 
-Style: .border-solid, .border-dashed, .border-dotted, .border-double, .border-none
+### Border Utilities
 
+**Width**: `.border-0`, `.border-1`, `.border-2`, `.border-3`, `.border-4`, `.border-5`
+
+**Style**: `.border-solid`, `.border-dashed`, `.border-dotted`, `.border-double`, `.border-none`
+
+```html
 <div class="border-3 border-solid border-blue-500">3px solid blue</div>
 <div class="border-2 border-dashed border-red-400">2px dashed red</div>
-Gradient Borders
+```
+
+### Gradient Borders
+
+```html
 <div class="border-gradient-sunset">Sunset gradient border</div>
 <div class="border-gradient-cosmic-fizz">Cosmic gradient border</div>
-📏 Spacing Utilities 🆕
-Margin (m, mt, mb, ml, mr, my, mx)
+```
+
+## 📏 Spacing Utilities 🆕
+
+### Margin (m, mt, mb, ml, mr, my, mx)
+
+```html
 <!-- All sides -->
 <div class="m-4">Margin all sides</div>
 
@@ -336,7 +425,11 @@ Margin (m, mt, mb, ml, mr, my, mx)
 <!-- Vertical & Horizontal -->
 <div class="my-5">Margin top & bottom</div>
 <div class="mx-4">Margin left & right</div>
-Padding (p, pt, pb, pl, pr, py, px)
+```
+
+### Padding (p, pt, pb, pl, pr, py, px)
+
+```html
 <!-- All sides -->
 <div class="p-6">Padding all sides</div>
 
@@ -349,46 +442,65 @@ Padding (p, pt, pb, pl, pr, py, px)
 <!-- Vertical & Horizontal -->
 <div class="py-8">Padding top & bottom</div>
 <div class="px-6">Padding left & right</div>
-Spacing Scale
-Class	Value	Pixels (at 16px base)
-0	0	0px
-1	0.25rem	4px
-2	0.5rem	8px
-3	0.75rem	12px
-4	1rem	16px
-5	1.25rem	20px
-6	1.5rem	24px
-7	1.75rem	28px
-8	2rem	32px
-9	2.25rem	36px
-10	2.5rem	40px
-11	2.75rem	44px
-12	3rem	48px
-🪟 Glassmorphism Effects
-Basic Glass Effects
-Standard Glass:
+```
 
+### Spacing Scale
+
+| Class | Value | Pixels (at 16px base) |
+|-------|-------|-----------------------|
+| `0` | `0` | `0px` |
+| `1` | `0.25rem` | `4px` |
+| `2` | `0.5rem` | `8px` |
+| `3` | `0.75rem` | `12px` |
+| `4` | `1rem` | `16px` |
+| `5` | `1.25rem` | `20px` |
+| `6` | `1.5rem` | `24px` |
+| `7` | `1.75rem` | `28px` |
+| `8` | `2rem` | `32px` |
+| `9` | `2.25rem` | `36px` |
+| `10` | `2.5rem` | `40px` |
+| `11` | `2.75rem` | `44px` |
+| `12` | `3rem` | `48px` |
+
+---
+
+## 🪟 Glassmorphism Effects
+
+### Basic Glass Effects
+
+**Standard Glass**:
+```html
 <div class="glass">
   Frosted glass effect with blur
 </div>
-Dark Glass:
+```
 
+**Dark Glass**:
+```html
 <div class="glass-dark">
   Dark frosted glass for dark backgrounds
 </div>
-Strong Glass:
+```
 
+**Strong Glass**:
+```html
 <div class="glass-strong">
   More opaque glass effect
 </div>
-Subtle Glass:
+```
 
+**Subtle Glass**:
+```html
 <div class="glass-subtle">
   Very light transparent glass
 </div>
-Liquid Glass with Gradient Tints
+```
+
+### Liquid Glass with Gradient Tints
+
 True glassmorphism with gradient hints - use any of the 92 gradients!
 
+```html
 <!-- Original gradients -->
 <div class="liquid-glass-ocean-bliss">
   <h2>Transparent Card</h2>
@@ -404,17 +516,24 @@ True glassmorphism with gradient hints - use any of the 92 gradients!
 <div class="liquid-glass-purple-dream">
   Purple dream liquid glass
 </div>
-Features:
+```
 
-95% transparency
-20px blur effect
-15% opacity gradient tint
-Glass-like borders
-Elevated shadows
-🎯 Component Classes
-Buttons
-Solid Buttons now have NO default size - you choose! - All 36 colors with 9 shades each:
+**Features**:
+- 95% transparency
+- 20px blur effect
+- 15% opacity gradient tint
+- Glass-like borders
+- Elevated shadows
 
+---
+
+## 🎯 Component Classes
+
+### Buttons
+
+**Solid Buttons now have **NO default size** - you choose!** - All 36 colors with 9 shades each:
+
+```html
 <!-- Color buttons with size classes -->
 <button class="btn-blue-500 btn-xs">Extra Small</button>
 <button class="btn-emerald-600 btn-sm">Small</button>
@@ -422,12 +541,16 @@ Solid Buttons now have NO default size - you choose! - All 36 colors with 9 shad
 <button class="btn-coral-600 btn-lg">Large</button>
 <button class="btn-gold-500 btn-xl">Extra Large</button>
 <button class="btn-bronze-600 btn-xxl">XXL</button>
-Outline Buttons:
+```
 
+**Outline Buttons**:
+```html
 <button class="btn-outline-violet-500 btn-sm">Violet Outline</button>
 <button class="btn-outline-turquoise-600 btn-md">Turquoise Outline</button>
-Gradient Buttons - All 92 gradients available:
+```
 
+**Gradient Buttons** - All 92 gradients available:
+```html
 <!-- Original -->
 <button class="btn-gradient-fire-opal">Fire Opal</button>
 <button class="btn-gradient-galaxy btn-md">Galaxy</button>
@@ -438,22 +561,32 @@ Gradient Buttons - All 92 gradients available:
 
 <!-- Medium -->
 <button class="btn-gradient-cosmic-fizz">Cosmic Fizz</button>
-Button Size Options
-Class	Padding	Font Size	Use Case
-.btn-xs	0	0.75rem	Inline buttons, icons
-.btn-sm	0.25rem 0.5rem	0.875rem	Compact UIs
-.btn-md	0.5rem 1rem	1rem	Default/Standard
-.btn-lg	0.75rem 1.5rem	1.125rem	CTAs
-.btn-xl	1rem 2rem	1.25rem	Hero sections
-.btn-xxl	1.25rem 2.5rem	1.5rem	Large displays
-Button States:
+```
 
-Default: Normal color
-Hover: 8% darker with lift effect
-Active/Pressed: 12% darker with pressed effect
-Focus: Glow outline
-📝 Typography 🆕
-Font Sizes (fs-1 to fs-12)
+### Button Size Options
+
+| Class | Padding | Font Size | Use Case |
+|-------|---------|-----------|----------|
+| `.btn-xs` | `0` | `0.75rem` | Inline buttons, icons |
+| `.btn-sm` | `0.25rem 0.5rem` | `0.875rem` | Compact UIs |
+| `.btn-md` | `0.5rem 1rem` | `1rem` | Default/Standard |
+| `.btn-lg` | `0.75rem 1.5rem` | `1.125rem` | CTAs |
+| `.btn-xl` | `1rem 2rem` | `1.25rem` | Hero sections |
+| `.btn-xxl` | `1.25rem 2.5rem` | `1.5rem` | Large displays |
+
+**Button States**:
+- **Default**: Normal color
+- **Hover**: 8% darker with lift effect
+- **Active/Pressed**: 12% darker with pressed effect
+- **Focus**: Glow outline
+
+---
+
+## 📝 Typography 🆕
+
+### Font Sizes (fs-1 to fs-12)
+
+```html
 <p class="fs-1">Extra small text (12px)</p>
 <p class="fs-2">Small text (14px)</p>
 <p class="fs-3">Base text (16px)</p>
@@ -466,35 +599,52 @@ Font Sizes (fs-1 to fs-12)
 <p class="fs-10">5XL text (40px)</p>
 <p class="fs-11">6XL text (48px)</p>
 <p class="fs-12">7XL text (56px)</p>
-Cards
-Solid Color Cards:
+```
 
+### Cards
+
+**Solid Color Cards**:
+```html
 <div class="card-sky-500">
   <h3>Sky Card</h3>
   <p>Card content</p>
 </div>
-Gradient Cards - 92 gradients:
+```
 
+**Gradient Cards** - 92 gradients:
+```html
 <div class="card-gradient-royal-sky">
   <h3>Royal Sky Card</h3>
   <p>3-color gradient card</p>
 </div>
-Badges
-Standard Badges:
+```
 
+### Badges
+
+**Standard Badges**:
+```html
 <span class="badge-lime-500">New</span>
 <span class="badge-crimson-500">Error</span>
 <span class="badge-aquamarine-500">Info</span>
-Gradient Badges:
+```
 
+**Gradient Badges**:
+```html
 <span class="badge-gradient-berry-mix">Premium</span>
 <span class="badge-gradient-liquid-crystal">Pro</span>
-Pills
-Rounded badge alternatives:
+```
 
+### Pills
+
+Rounded badge alternatives:
+```html
 <span class="pill-fuchsia-500">Featured</span>
 <span class="pill-bronze-600">Legacy</span>
-Alerts
+```
+
+### Alerts
+
+```html
 <div class="alert-emerald-500">
   <strong>Success!</strong> Operation completed.
 </div>
@@ -502,47 +652,80 @@ Alerts
 <div class="alert-salmon-500">
   <strong>Warning!</strong> Please review.
 </div>
-Progress Bars
-Solid Color Progress:
+```
 
+### Progress Bars
+
+**Solid Color Progress**:
+```html
 <div class="progress-violet-500">
   <div class="progress-bar" style="width: 75%"></div>
 </div>
-Gradient Progress - 92 gradients:
+```
 
+**Gradient Progress** - 92 gradients:
+```html
 <div class="progress-gradient-dreamy-rainbow">
   <div class="progress-bar" style="width: 60%"></div>
 </div>
-Other Components
+```
+
+### Other Components
+
+```html
 <div class="card-gradient-liquid-crystal">Card</div>
 <span class="badge-gradient-berry-mix">Badge</span>
 <div class="progress-gradient-sunrise">
   <div class="progress-bar" style="width: 75%"></div>
 </div>
-💫 Shadow Utilities
-Basic Shadows
+```
+
+---
+
+## 💫 Shadow Utilities
+
+### Basic Shadows
+```html
 <div class="shadow-sm">Small shadow</div>
 <div class="shadow">Medium shadow</div>
 <div class="shadow-lg">Large shadow</div>
 <div class="shadow-none">No shadow</div>
-Colored Shadows
-Available for all 36 color families:
+```
 
+### Colored Shadows
+
+Available for all 36 color families:
+```html
 <div class="shadow-rose-500">Rose shadow</div>
 <div class="shadow-lg-aquamarine-600">Large aquamarine shadow</div>
 <div class="shadow-navy-400">Navy shadow</div>
-Special Shadows
+```
+
+### Special Shadows
+```html
 <div class="shadow-gradient">Multi-color gradient shadow</div>
 <div class="shadow-glow">Glowing white shadow</div>
-🎭 Opacity Utilities
+```
+
+---
+
+## 🎭 Opacity Utilities
+
+```html
 <div class="opacity-0">Invisible (0%)</div>
 <div class="opacity-25">25% opacity</div>
 <div class="opacity-50">50% opacity</div>
 <div class="opacity-75">75% opacity</div>
 <div class="opacity-100">100% opacity</div>
-📐 CSS Custom Properties
+```
+
+---
+
+## 📐 CSS Custom Properties
+
 All 326 colors available as CSS variables:
 
+```css
 :root {
   --blue: #0D6EFD;
   --blue-100: #E7F1FF;
@@ -554,15 +737,24 @@ All 326 colors available as CSS variables:
   --bronze-500: #CD7F32;
   /* ... all colors */
 }
-Usage:
+```
 
+**Usage**:
+```css
 .custom-element {
   background-color: var(--violet-500);
   border-color: var(--violet-700);
   color: var(--white);
 }
-🎨 SASS Variables & Mixins
-Using Variables
+```
+
+---
+
+## 🎨 SASS Variables & Mixins
+
+### Using Variables
+
+```scss
 @use 'path/to/variables' as v;
 
 .my-component {
@@ -570,7 +762,11 @@ Using Variables
   color: v.$white;
   border: 2px solid v.$emerald-700;
 }
-Using Color Maps
+```
+
+### Using Color Maps
+
+```scss
 @use 'path/to/maps' as *;
 
 @each $name, $color in $colors {
@@ -578,16 +774,21 @@ Using Color Maps
     background: $color;
   }
 }
-Available Mixins
-Generate Utilities:
+```
 
+### Available Mixins
+
+**Generate Utilities**:
+```scss
 @use 'path/to/mixins' as mix;
 @use 'path/to/maps' as *;
 
 @include mix.generate-color-utilities('color', 'my-text', $colors);
 @include mix.generate-gradient-utilities('background', 'my-bg', $gradients);
-Responsive Breakpoints:
+```
 
+**Responsive Breakpoints**:
+```scss
 @use 'path/to/mixins' as mix;
 
 .responsive-element {
@@ -601,8 +802,15 @@ Responsive Breakpoints:
     font-size: 18px;
   }
 }
-🌟 Real-World Examples
-Button Combinations
+```
+
+---
+
+## 🌟 Real-World Examples
+
+### Button Combinations
+
+```html
 <!-- Size + Color -->
 <button class="btn-blue-600 btn-lg px-8">
   Large Blue Button
@@ -617,7 +825,11 @@ Button Combinations
 <button class="btn-outline-emerald-500 btn-md text-hover-emerald-700">
   Hover Effect
 </button>
-Modern Navigation with Hover & Active States
+```
+
+### Modern Navigation with Hover & Active States
+
+```html
 <nav class="bg-white shadow">
   <div class="flex space-x-4 p-4">
     <a href="#" class="text-gray-600 text-hover-blue-600 text-active-blue-700 is-active px-3 py-2">
@@ -634,7 +846,11 @@ Modern Navigation with Hover & Active States
     </a>
   </div>
 </nav>
-Tab Navigation with Background Active States
+```
+
+### Tab Navigation with Background Active States
+
+```html
 <div class="flex border-b">
   <button class="px-4 py-2 bg-transparent bg-hover-gray-100 bg-active-white text-active-blue-600 is-active">
     Overview
@@ -646,7 +862,11 @@ Tab Navigation with Background Active States
     Reports
   </button>
 </div>
-Gradient Hero Section with Liquid Glass
+```
+
+### Gradient Hero Section with Liquid Glass
+
+```html
 <section class="bg-gradient-royal-sky" style="min-height: 100vh; padding: 4rem 2rem;">
   <div class="liquid-glass-cosmic-fizz" style="padding: 3rem; max-width: 800px; margin: 0 auto;">
     <h1 class="text-white" style="font-size: 3rem; margin-bottom: 1rem;">
@@ -660,7 +880,11 @@ Gradient Hero Section with Liquid Glass
     </button>
   </div>
 </section>
-Pricing Cards with Custom Gradients
+```
+
+### Pricing Cards with Custom Gradients
+
+```html
 <div style="display: flex; gap: 2rem; padding: 2rem;">
   <div class="liquid-glass-mint-fusion" style="flex: 1; padding: 2rem; text-align: center;">
     <h3>Basic</h3>
@@ -681,7 +905,11 @@ Pricing Cards with Custom Gradients
     <button class="btn-gradient-sunrise" style="width: 100%;">Choose Plan</button>
   </div>
 </div>
-Interactive Card Grid
+```
+
+### Interactive Card Grid
+
+```html
 <div class="grid grid-cols-3 gap-4">
   <div class="card-gradient-dreamy bg-hover-opacity-90 cursor-pointer">
     <h4>Feature One</h4>
@@ -698,7 +926,11 @@ Interactive Card Grid
     <p>Description here</p>
   </div>
 </div>
-Card with Spacing
+```
+
+### Card with Spacing
+
+```html
 <div class="card-gradient-sunset p-6 m-4">
   <h2 class="fs-8 mb-3 text-gradient-royal-sky">
     Gradient Heading
@@ -710,79 +942,117 @@ Card with Spacing
     Action Button
   </button>
 </div>
-🎯 Best Practices
-1. Use Semantic Color Names
+```
+
+---
+
+## 🎯 Best Practices
+
+### 1. **Use Semantic Color Names**
+```html
 <!-- Good -->
 <button class="btn-emerald-500">Success Action</button>
 
 <!-- Avoid -->
 <button style="background: #10B981;">Success Action</button>
-2. Leverage Hover & Active States for Navigation
+```
+
+### 2. **Leverage Hover & Active States for Navigation**
+```html
 <nav>
   <a class="text-gray-600 text-hover-blue-600 text-active-blue-700 is-active">
     Active Link
   </a>
 </nav>
-3. Combine Glass Effects with Gradients
+```
+
+### 3. **Combine Glass Effects with Gradients**
+```html
 <div class="bg-gradient-deep-space" style="min-height: 100vh;">
   <div class="liquid-glass-cyber-blue">
     Glassmorphism over gradient
   </div>
 </div>
-4. Maintain Contrast Ratios
-Light text (100-400) on dark backgrounds (600-900)
-Dark text (600-900) on light backgrounds (100-400)
-5. Use Gradients Purposefully
-Low gradients: Subtle backgrounds, cards
-Medium gradients: CTAs, featured sections
-Original gradients: Hero sections, major UI elements
-6. Create Consistent Themes
+```
+
+### 4. **Maintain Contrast Ratios**
+- Light text (100-400) on dark backgrounds (600-900)
+- Dark text (600-900) on light backgrounds (100-400)
+
+### 5. **Use Gradients Purposefully**
+- **Low gradients**: Subtle backgrounds, cards
+- **Medium gradients**: CTAs, featured sections
+- **Original gradients**: Hero sections, major UI elements
+
+### 6. **Create Consistent Themes**
 Choose a primary color family and stick with it throughout your design.
 
-📊 What's New in v2.2.1
-🐛 Bug Fixes
-✅ Fixed gradient text unwanted padding
-✅ Removed default button padding
-✅ Improved gradient color variations for better distinction
-✨ New Features
-🆕 Button size utilities (xs, sm, md, lg, xl, xxl)
-🆕 Margin utilities (m, mt, mb, ml, mr, my, mx: 0-12)
-🆕 Padding utilities (p, pt, pb, pl, pr, py, px: 0-12)
-🆕 Font size utilities (fs-1 to fs-12)
-🎨 Improvements
-Updated 42 gradient colors for more diversity
-Better spacing scale (0.25rem increments)
-Responsive typography scale
-More flexible component sizing
-📊 Framework Stats
-36 Color Families
-326 Total Color Shades
-92 Unique Gradients
-50 Original gradients
-24 Low gradients
-18 Medium gradients
-156 Spacing utilities (margin + padding)
-12 Font size options
-6 Button sizes
-Hover & Active States for all colors
-4 Glass Effect Variants
-92 Liquid Glass Combinations
-Unlimited Component Possibilities
-🚀 Performance Tips
-Use compressed CSS in production (--style=compressed)
-Purge unused utilities in production builds
-Gradients are CSS-based - no image loading needed
-Leverage caching for the compiled CSS file
-Consider critical CSS for above-the-fold content
-📱 Browser Support
-✅ Chrome/Edge (latest)
-✅ Firefox (latest)
-✅ Safari (latest)
-✅ Opera (latest)
-⚠️ IE 11 (limited support, no backdrop-filter)
-Note: Glassmorphism requires backdrop-filter support. Provide fallbacks for older browsers.
+---
 
-📦 File Structure
+## 📊 What's New in v2.2.1
+
+### 🐛 Bug Fixes
+- ✅ Fixed gradient text unwanted padding
+- ✅ Removed default button padding
+- ✅ Improved gradient color variations for better distinction
+
+### ✨ New Features
+- 🆕 Button size utilities (xs, sm, md, lg, xl, xxl)
+- 🆕 Margin utilities (m, mt, mb, ml, mr, my, mx: 0-12)
+- 🆕 Padding utilities (p, pt, pb, pl, pr, py, px: 0-12)
+- 🆕 Font size utilities (fs-1 to fs-12)
+
+### 🎨 Improvements
+- Updated 42 gradient colors for more diversity
+- Better spacing scale (0.25rem increments)
+- Responsive typography scale
+- More flexible component sizing
+
+---
+
+## 📊 Framework Stats
+
+- **36 Color Families**
+- **326 Total Color Shades**
+- **92 Unique Gradients**
+  - 50 Original gradients
+  - 24 Low gradients
+  - 18 Medium gradients
+- **156** Spacing utilities (margin + padding)
+- **12** Font size options
+- **6** Button sizes
+- **Hover & Active States** for all colors
+- **4 Glass Effect Variants**
+- **92 Liquid Glass Combinations**
+- **Unlimited Component Possibilities**
+
+---
+
+## 🚀 Performance Tips
+
+1. **Use compressed CSS** in production (`--style=compressed`)
+2. **Purge unused utilities** in production builds
+3. **Gradients are CSS-based** - no image loading needed
+4. **Leverage caching** for the compiled CSS file
+5. **Consider critical CSS** for above-the-fold content
+
+---
+
+## 📱 Browser Support
+
+- ✅ Chrome/Edge (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Opera (latest)
+- ⚠️ IE 11 (limited support, no backdrop-filter)
+
+**Note**: Glassmorphism requires `backdrop-filter` support. Provide fallbacks for older browsers.
+
+---
+
+## 📦 File Structure
+
+```
 your-project/
 ├── scss/
 │   ├── _variables.scss      # 326 color variables
@@ -794,14 +1064,25 @@ your-project/
 ├── dist/
 │   └── iFarouqCSS.css       # Compiled CSS
 └── index.html                # Your HTML
-🤝 Customization
-Add Your Own Gradient
+```
+
+---
+
+## 🤝 Customization
+
+### Add Your Own Gradient
+
+```scss
 // In _maps.scss
 $gradients: (
   // ... existing gradients
   "my-custom": linear-gradient(135deg, #yourcolor1 0%, #yourcolor2 100%)
 );
-Add a New Color Family
+```
+
+### Add a New Color Family
+
+```scss
 // In _variables.scss
 $custom-color: #123456;
 $custom-100: #ABCDEF;
@@ -814,37 +1095,54 @@ $colors: (
   "custom-100": $custom-100,
   // ... all shades
 );
-📄 License
+```
+
+---
+
+## 📄 License
+
 MIT License - free to use for personal and commercial projects.
 
-🎉 Credits
-Created with ❤️ by iFarouq
+---
+
+## 🎉 Credits
+
+**Created with ❤️ by iFarouq**
 
 Built with modern SASS/SCSS and cutting-edge CSS features.
 
-Version: 2.2.1
-Release Date: December 17, 2025
+**Version**: 2.2.1  
+**Release Date**: December 17, 2025
 
-📞 Support
+---
+
+## 📞 Support
+
 For issues, suggestions, or questions:
+- Visit my Portfolio: https://ifarouq.dev
+- Open an issue on GitHub: https://github.com/iFarouqDev/iFarouqCSS
+- Email: [ifarouq@ifarouq.dev](mailto:ifarouq@ifarouq.dev)
+- Twitter: https://x.com/iFarouqDev
 
-Visit my Portfolio: https://ifarouq.dev
-Open an issue on GitHub: https://github.com/iFarouqDev/iFarouqCSS
-Email: ifarouq@ifarouq.dev
-Twitter: https://x.com/iFarouqDev
-🗺️ Roadmap
-[x] 36 color families with full shades
-[x] 92 gradient collection
-[x] Hover & active utilities
-[x] Glassmorphism effects
-[x] Button size uitilties
-[x] Margin uitilties
-[x] Padding uitilties
-[x] Font size uitilties
-[ ] Dark mode variants
-[ ] Animation utilities
-[ ] CDN hosting
-[ ] NPM package
-[ ] React/Vue components
-[ ] Figma design tokens
-Happy building! 🚀✨
+---
+
+## 🗺️ Roadmap
+
+- [x] 36 color families with full shades
+- [x] 92 gradient collection
+- [x] Hover & active utilities
+- [x] Glassmorphism effects
+- [x] Button size uitilties
+- [x] Margin uitilties
+- [x] Padding uitilties
+- [x] Font size uitilties
+- [ ] Dark mode variants
+- [ ] Animation utilities
+- [ ] CDN hosting
+- [ ] NPM package
+- [ ] React/Vue components
+- [ ] Figma design tokens
+
+---
+
+**Happy building! 🚀✨**
