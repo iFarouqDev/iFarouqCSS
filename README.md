@@ -642,7 +642,7 @@ Rounded badge alternatives:
 <span class="pill-bronze-600">Legacy</span>
 ```
 
-**Gradient Pills**:
+**Gradient Pills 🆕**:
 ```html
 <span class="pill-gradient-royal-gold">Gold</span>
 <span class="pill-gradient-hot-pink">Hot</span>
@@ -1142,6 +1142,7 @@ For issues, suggestions, or questions:
 - [x] Margin uitilties
 - [x] Padding uitilties
 - [x] Font size uitilties
+- [x] Pill Gradients Components
 - [ ] Dark mode variants
 - [ ] Animation utilities
 - [ ] CDN hosting
