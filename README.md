@@ -43,12 +43,22 @@ A comprehensive, modern SASS color framework featuring **36 color families** wit
    └── colors-framework.scss
    ```
 
-3. **Compile the framework**:
+3. **Check if you have SASS on your Machine:**:
+   ```bash
+   sass --version
+   ```
+   If you have already installed SASS on your machine, skip step 4 and move to step 5
+
+4. **Install SASS on your Machine**:
+   ```bash
+   npm install -g sass
+   ```
+5. **Compile the framework**:
    ```bash
    sass scss/colors-framework.scss dist/iFarouqCSS.css --style=compressed
    ```
 
-4. **Link in your HTML**:
+6. **Link in your HTML**:
    ```html
    <link rel="stylesheet" href="dist/iFarouqCSS.css">
    ```
