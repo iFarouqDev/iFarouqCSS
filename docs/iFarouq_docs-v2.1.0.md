@@ -1,6 +1,6 @@
 <div align="center">
 
-![iFarouqCSS Logo](logo/iFarouqCSS.webp)
+![iFarouqCSS Logo](../logo/iFarouqCSS.webp)
 # iFarouqCSS
 
 **A Comprehensive Modern SASS Color Framework**
