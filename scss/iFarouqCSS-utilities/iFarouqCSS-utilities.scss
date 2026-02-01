@@ -1,0 +1,89 @@
+/*!
+ * iFarouqCSS UTILITIES - Utilities Only
+ * Version: 2.2.1-utilities
+ * Release Date: Fabruary 01, 2026
+ * Size: ~401KB minified
+ * 
+ * Includes ONLY:
+ * - Text color utilities
+ * - Background color utilities  
+ * - Border utilities
+ * - Gradient utilities (text, background)
+ * - Hover & active state utilities
+ * - Spacing utilities (margin, padding)
+ * - Font size utilities
+ * - Opacity utilities
+ * - Shadow utilities
+ * - Glassmorphism utilities
+ * 
+ * Does NOT include:
+ * - Component classes (buttons, cards, badges, etc.)
+ * - Use this when you have custom components
+ * 
+ * Perfect for: Using with Bootstrap components, custom design systems
+ * 
+ * Compile: sass scss/iFarouqCSS-utilities/iFarouqCSS-utilities.scss dist/iFarouqCSS-utilities.css --style=compressed
+ */
+
+@use 'variables' as *;
+@use 'maps' as *;
+@use 'mixins' as *;
+@use 'utilities';
+
+// Base styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// CSS Variables for all colors
+:root {
+  // Blues
+  --blue: #{$blue};
+  --blue-500: #{$blue-500};
+  
+  // Indigos
+  --indigo: #{$indigo};
+  --indigo-500: #{$indigo-500};
+  
+  // Purples
+  --purple: #{$purple};
+  --purple-500: #{$purple-500};
+  
+  // Pinks
+  --pink: #{$pink};
+  --pink-500: #{$pink-500};
+  
+  // Reds
+  --red: #{$red};
+  --red-500: #{$red-500};
+  
+  // Oranges
+  --orange: #{$orange};
+  --orange-500: #{$orange-500};
+  
+  // Yellows
+  --yellow: #{$yellow};
+  --yellow-500: #{$yellow-500};
+  
+  // Greens
+  --green: #{$green};
+  --green-500: #{$green-500};
+  
+  // Teals
+  --teal: #{$teal};
+  --teal-500: #{$teal-500};
+  
+  // Cyans
+  --cyan: #{$cyan};
+  --cyan-500: #{$cyan-500};
+  
+  // Grays
+  --gray: #{$gray};
+  --gray-500: #{$gray-500};
+  
+  // Base
+  --black: #{$black};
+  --white: #{$white};
+}
