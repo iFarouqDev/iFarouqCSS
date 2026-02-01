@@ -1,0 +1,110 @@
+/*!
+ * iFarouqCSS LITE - Lightweight Version
+ * Version: 2.3.0 - lite
+ * Release Date: February 01, 2026
+ * Size: ~287KB minified
+ * 
+ * Includes:
+ * - 6 essential color families (blue, red, green, yellow, purple, gray)
+ * - All 9 shades per color (54 total shades)
+ * - 25 most popular gradients
+ * - All components
+ * - All utilities (spacing, typography, hover, active states)
+ * - Glassmorphism effects
+ * 
+ * Perfect for: Production websites that need essential colors with smaller file size
+ * 
+ * Compile: sass scss/iFarouqCSS-lite/iFarouqCSS-lite.scss dist/iFarouqCSS-lite.css --style=compressed
+ */
+
+@use 'variables' as *;
+@use 'maps-lite' as *;
+@use 'mixins' as *;
+@use 'utilities';
+@use 'components';
+
+// Base styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// CSS Variables for 6 essential colors
+:root {
+  // Blues
+  --blue: #{$blue};
+  --blue-100: #{$blue-100};
+  --blue-200: #{$blue-200};
+  --blue-300: #{$blue-300};
+  --blue-400: #{$blue-400};
+  --blue-500: #{$blue-500};
+  --blue-600: #{$blue-600};
+  --blue-700: #{$blue-700};
+  --blue-800: #{$blue-800};
+  --blue-900: #{$blue-900};
+  
+  // Reds
+  --red: #{$red};
+  --red-100: #{$red-100};
+  --red-200: #{$red-200};
+  --red-300: #{$red-300};
+  --red-400: #{$red-400};
+  --red-500: #{$red-500};
+  --red-600: #{$red-600};
+  --red-700: #{$red-700};
+  --red-800: #{$red-800};
+  --red-900: #{$red-900};
+  
+  // Greens
+  --green: #{$green};
+  --green-100: #{$green-100};
+  --green-200: #{$green-200};
+  --green-300: #{$green-300};
+  --green-400: #{$green-400};
+  --green-500: #{$green-500};
+  --green-600: #{$green-600};
+  --green-700: #{$green-700};
+  --green-800: #{$green-800};
+  --green-900: #{$green-900};
+  
+  // Yellows
+  --yellow: #{$yellow};
+  --yellow-100: #{$yellow-100};
+  --yellow-200: #{$yellow-200};
+  --yellow-300: #{$yellow-300};
+  --yellow-400: #{$yellow-400};
+  --yellow-500: #{$yellow-500};
+  --yellow-600: #{$yellow-600};
+  --yellow-700: #{$yellow-700};
+  --yellow-800: #{$yellow-800};
+  --yellow-900: #{$yellow-900};
+  
+  // Purples
+  --purple: #{$purple};
+  --purple-100: #{$purple-100};
+  --purple-200: #{$purple-200};
+  --purple-300: #{$purple-300};
+  --purple-400: #{$purple-400};
+  --purple-500: #{$purple-500};
+  --purple-600: #{$purple-600};
+  --purple-700: #{$purple-700};
+  --purple-800: #{$purple-800};
+  --purple-900: #{$purple-900};
+  
+  // Grays
+  --gray: #{$gray};
+  --gray-100: #{$gray-100};
+  --gray-200: #{$gray-200};
+  --gray-300: #{$gray-300};
+  --gray-400: #{$gray-400};
+  --gray-500: #{$gray-500};
+  --gray-600: #{$gray-600};
+  --gray-700: #{$gray-700};
+  --gray-800: #{$gray-800};
+  --gray-900: #{$gray-900};
+  
+  // Base
+  --black: #{$black};
+  --white: #{$white};
+}
