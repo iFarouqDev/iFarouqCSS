@@ -1,0 +1,463 @@
+/*!
+ * iFarouqCSS COLORS - Colors only
+ * Version: 2.3.0
+ * Release Date: Fabruary 01, 2026
+ * Size:~8KB minified
+ * Features: 36 color families, 326+ shades, 92 gradients
+ *
+ * Does NOT include: 
+ * - Component classes (buttons, cards, badges, pills, etc.)
+ * - Utility classes (text, bg, spacing, etc.) 
+ * - Use this when you only wants our colors and gradients
+ * Compile: sass scss/iFarouqCSS-colors/iFarouqCSS-colors.scss dist/iFarouqCSS-colors.css --style=compressed
+ */
+
+// Import core files in order using modern @use syntax
+@use 'variables' as *;
+@use 'maps' as *;
+
+// Base styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Root color variables (CSS Custom Properties)
+:root {
+  // Blues
+  --blue: #{$blue};
+  --blue-100: #{$blue-100};
+  --blue-200: #{$blue-200};
+  --blue-300: #{$blue-300};
+  --blue-400: #{$blue-400};
+  --blue-500: #{$blue-500};
+  --blue-600: #{$blue-600};
+  --blue-700: #{$blue-700};
+  --blue-800: #{$blue-800};
+  --blue-900: #{$blue-900};
+
+  // Indigos
+  --indigo: #{$indigo};
+  --indigo-100: #{$indigo-100};
+  --indigo-200: #{$indigo-200};
+  --indigo-300: #{$indigo-300};
+  --indigo-400: #{$indigo-400};
+  --indigo-500: #{$indigo-500};
+  --indigo-600: #{$indigo-600};
+  --indigo-700: #{$indigo-700};
+  --indigo-800: #{$indigo-800};
+  --indigo-900: #{$indigo-900};
+
+  // Purples
+  --purple: #{$purple};
+  --purple-100: #{$purple-100};
+  --purple-200: #{$purple-200};
+  --purple-300: #{$purple-300};
+  --purple-400: #{$purple-400};
+  --purple-500: #{$purple-500};
+  --purple-600: #{$purple-600};
+  --purple-700: #{$purple-700};
+  --purple-800: #{$purple-800};
+  --purple-900: #{$purple-900};
+
+  // Pinks
+  --pink: #{$pink};
+  --pink-100: #{$pink-100};
+  --pink-200: #{$pink-200};
+  --pink-300: #{$pink-300};
+  --pink-400: #{$pink-400};
+  --pink-500: #{$pink-500};
+  --pink-600: #{$pink-600};
+  --pink-700: #{$pink-700};
+  --pink-800: #{$pink-800};
+  --pink-900: #{$pink-900};
+
+  // Reds
+  --red: #{$red};
+  --red-100: #{$red-100};
+  --red-200: #{$red-200};
+  --red-300: #{$red-300};
+  --red-400: #{$red-400};
+  --red-500: #{$red-500};
+  --red-600: #{$red-600};
+  --red-700: #{$red-700};
+  --red-800: #{$red-800};
+  --red-900: #{$red-900};
+
+  // Oranges
+  --orange: #{$orange};
+  --orange-100: #{$orange-100};
+  --orange-200: #{$orange-200};
+  --orange-300: #{$orange-300};
+  --orange-400: #{$orange-400};
+  --orange-500: #{$orange-500};
+  --orange-600: #{$orange-600};
+  --orange-700: #{$orange-700};
+  --orange-800: #{$orange-800};
+  --orange-900: #{$orange-900};
+
+  // Yellows
+  --yellow: #{$yellow};
+  --yellow-100: #{$yellow-100};
+  --yellow-200: #{$yellow-200};
+  --yellow-300: #{$yellow-300};
+  --yellow-400: #{$yellow-400};
+  --yellow-500: #{$yellow-500};
+  --yellow-600: #{$yellow-600};
+  --yellow-700: #{$yellow-700};
+  --yellow-800: #{$yellow-800};
+  --yellow-900: #{$yellow-900};
+
+  // Greens
+  --green: #{$green};
+  --green-100: #{$green-100};
+  --green-200: #{$green-200};
+  --green-300: #{$green-300};
+  --green-400: #{$green-400};
+  --green-500: #{$green-500};
+  --green-600: #{$green-600};
+  --green-700: #{$green-700};
+  --green-800: #{$green-800};
+  --green-900: #{$green-900};
+
+  // Teals
+  --teal: #{$teal};
+  --teal-100: #{$teal-100};
+  --teal-200: #{$teal-200};
+  --teal-300: #{$teal-300};
+  --teal-400: #{$teal-400};
+  --teal-500: #{$teal-500};
+  --teal-600: #{$teal-600};
+  --teal-700: #{$teal-700};
+  --teal-800: #{$teal-800};
+  --teal-900: #{$teal-900};
+
+  // Cyans
+  --cyan: #{$cyan};
+  --cyan-100: #{$cyan-100};
+  --cyan-200: #{$cyan-200};
+  --cyan-300: #{$cyan-300};
+  --cyan-400: #{$cyan-400};
+  --cyan-500: #{$cyan-500};
+  --cyan-600: #{$cyan-600};
+  --cyan-700: #{$cyan-700};
+  --cyan-800: #{$cyan-800};
+  --cyan-900: #{$cyan-900};
+
+  // Grays
+  --gray: #{$gray};
+  --gray-100: #{$gray-100};
+  --gray-200: #{$gray-200};
+  --gray-300: #{$gray-300};
+  --gray-400: #{$gray-400};
+  --gray-500: #{$gray-500};
+  --gray-600: #{$gray-600};
+  --gray-700: #{$gray-700};
+  --gray-800: #{$gray-800};
+  --gray-900: #{$gray-900};
+
+  // Limes
+  --lime: #{$lime};
+  --lime-100: #{$lime-100};
+  --lime-200: #{$lime-200};
+  --lime-300: #{$lime-300};
+  --lime-400: #{$lime-400};
+  --lime-500: #{$lime-500};
+  --lime-600: #{$lime-600};
+  --lime-700: #{$lime-700};
+  --lime-800: #{$lime-800};
+  --lime-900: #{$lime-900};
+
+  // Emeralds
+  --emerald: #{$emerald};
+  --emerald-100: #{$emerald-100};
+  --emerald-200: #{$emerald-200};
+  --emerald-300: #{$emerald-300};
+  --emerald-400: #{$emerald-400};
+  --emerald-500: #{$emerald-500};
+  --emerald-600: #{$emerald-600};
+  --emerald-700: #{$emerald-700};
+  --emerald-800: #{$emerald-800};
+  --emerald-900: #{$emerald-900};
+
+  // Skies
+  --sky: #{$sky};
+  --sky-100: #{$sky-100};
+  --sky-200: #{$sky-200};
+  --sky-300: #{$sky-300};
+  --sky-400: #{$sky-400};
+  --sky-500: #{$sky-500};
+  --sky-600: #{$sky-600};
+  --sky-700: #{$sky-700};
+  --sky-800: #{$sky-800};
+  --sky-900: #{$sky-900};
+
+  // Violets
+  --violet: #{$violet};
+  --violet-100: #{$violet-100};
+  --violet-200: #{$violet-200};
+  --violet-300: #{$violet-300};
+  --violet-400: #{$violet-400};
+  --violet-500: #{$violet-500};
+  --violet-600: #{$violet-600};
+  --violet-700: #{$violet-700};
+  --violet-800: #{$violet-800};
+  --violet-900: #{$violet-900};
+
+  // Fuchsias
+  --fuchsia: #{$fuchsia};
+  --fuchsia-100: #{$fuchsia-100};
+  --fuchsia-200: #{$fuchsia-200};
+  --fuchsia-300: #{$fuchsia-300};
+  --fuchsia-400: #{$fuchsia-400};
+  --fuchsia-500: #{$fuchsia-500};
+  --fuchsia-600: #{$fuchsia-600};
+  --fuchsia-700: #{$fuchsia-700};
+  --fuchsia-800: #{$fuchsia-800};
+  --fuchsia-900: #{$fuchsia-900};
+
+  // Roses
+  --rose: #{$rose};
+  --rose-100: #{$rose-100};
+  --rose-200: #{$rose-200};
+  --rose-300: #{$rose-300};
+  --rose-400: #{$rose-400};
+  --rose-500: #{$rose-500};
+  --rose-600: #{$rose-600};
+  --rose-700: #{$rose-700};
+  --rose-800: #{$rose-800};
+  --rose-900: #{$rose-900};
+
+  // Ambers
+  --amber: #{$amber};
+  --amber-100: #{$amber-100};
+  --amber-200: #{$amber-200};
+  --amber-300: #{$amber-300};
+  --amber-400: #{$amber-400};
+  --amber-500: #{$amber-500};
+  --amber-600: #{$amber-600};
+  --amber-700: #{$amber-700};
+  --amber-800: #{$amber-800};
+  --amber-900: #{$amber-900};
+
+  // Slates
+  --slate: #{$slate};
+  --slate-100: #{$slate-100};
+  --slate-200: #{$slate-200};
+  --slate-300: #{$slate-300};
+  --slate-400: #{$slate-400};
+  --slate-500: #{$slate-500};
+  --slate-600: #{$slate-600};
+  --slate-700: #{$slate-700};
+  --slate-800: #{$slate-800};
+  --slate-900: #{$slate-900};
+
+  // Zincs
+  --zinc: #{$zinc};
+  --zinc-100: #{$zinc-100};
+  --zinc-200: #{$zinc-200};
+  --zinc-300: #{$zinc-300};
+  --zinc-400: #{$zinc-400};
+  --zinc-500: #{$zinc-500};
+  --zinc-600: #{$zinc-600};
+  --zinc-700: #{$zinc-700};
+  --zinc-800: #{$zinc-800};
+  --zinc-900: #{$zinc-900};
+
+  // Stones
+  --stone: #{$stone};
+  --stone-100: #{$stone-100};
+  --stone-200: #{$stone-200};
+  --stone-300: #{$stone-300};
+  --stone-400: #{$stone-400};
+  --stone-500: #{$stone-500};
+  --stone-600: #{$stone-600};
+  --stone-700: #{$stone-700};
+  --stone-800: #{$stone-800};
+  --stone-900: #{$stone-900};
+
+  // Neutrals
+  --neutral: #{$neutral};
+  --neutral-100: #{$neutral-100};
+  --neutral-200: #{$neutral-200};
+  --neutral-300: #{$neutral-300};
+  --neutral-400: #{$neutral-400};
+  --neutral-500: #{$neutral-500};
+  --neutral-600: #{$neutral-600};
+  --neutral-700: #{$neutral-700};
+  --neutral-800: #{$neutral-800};
+  --neutral-900: #{$neutral-900};
+
+  // Crimsons
+  --crimson: #{$crimson};
+  --crimson-100: #{$crimson-100};
+  --crimson-200: #{$crimson-200};
+  --crimson-300: #{$crimson-300};
+  --crimson-400: #{$crimson-400};
+  --crimson-500: #{$crimson-500};
+  --crimson-600: #{$crimson-600};
+  --crimson-700: #{$crimson-700};
+  --crimson-800: #{$crimson-800};
+  --crimson-900: #{$crimson-900};
+
+  // Corals
+  --coral: #{$coral};
+  --coral-100: #{$coral-100};
+  --coral-200: #{$coral-200};
+  --coral-300: #{$coral-300};
+  --coral-400: #{$coral-400};
+  --coral-500: #{$coral-500};
+  --coral-600: #{$coral-600};
+  --coral-700: #{$coral-700};
+  --coral-800: #{$coral-800};
+  --coral-900: #{$coral-900};
+
+  // Salmons
+  --salmon: #{$salmon};
+  --salmon-100: #{$salmon-100};
+  --salmon-200: #{$salmon-200};
+  --salmon-300: #{$salmon-300};
+  --salmon-400: #{$salmon-400};
+  --salmon-500: #{$salmon-500};
+  --salmon-600: #{$salmon-600};
+  --salmon-700: #{$salmon-700};
+  --salmon-800: #{$salmon-800};
+  --salmon-900: #{$salmon-900};
+
+  // Golds
+  --gold: #{$gold};
+  --gold-100: #{$gold-100};
+  --gold-200: #{$gold-200};
+  --gold-300: #{$gold-300};
+  --gold-400: #{$gold-400};
+  --gold-500: #{$gold-500};
+  --gold-600: #{$gold-600};
+  --gold-700: #{$gold-700};
+  --gold-800: #{$gold-800};
+  --gold-900: #{$gold-900};
+
+  // Bronzes
+  --bronze: #{$bronze};
+  --bronze-100: #{$bronze-100};
+  --bronze-200: #{$bronze-200};
+  --bronze-300: #{$bronze-300};
+  --bronze-400: #{$bronze-400};
+  --bronze-500: #{$bronze-500};
+  --bronze-600: #{$bronze-600};
+  --bronze-700: #{$bronze-700};
+  --bronze-800: #{$bronze-800};
+  --bronze-900: #{$bronze-900};
+
+  // Silvers
+  --silver: #{$silver};
+  --silver-100: #{$silver-100};
+  --silver-200: #{$silver-200};
+  --silver-300: #{$silver-300};
+  --silver-400: #{$silver-400};
+  --silver-500: #{$silver-500};
+  --silver-600: #{$silver-600};
+  --silver-700: #{$silver-700};
+  --silver-800: #{$silver-800};
+  --silver-900: #{$silver-900};
+
+  // Navys
+  --navy: #{$navy};
+  --navy-100: #{$navy-100};
+  --navy-200: #{$navy-200};
+  --navy-300: #{$navy-300};
+  --navy-400: #{$navy-400};
+  --navy-500: #{$navy-500};
+  --navy-600: #{$navy-600};
+  --navy-700: #{$navy-700};
+  --navy-800: #{$navy-800};
+  --navy-900: #{$navy-900};
+
+  // Maroons
+  --maroon: #{$maroon};
+  --maroon-100: #{$maroon-100};
+  --maroon-200: #{$maroon-200};
+  --maroon-300: #{$maroon-300};
+  --maroon-400: #{$maroon-400};
+  --maroon-500: #{$maroon-500};
+  --maroon-600: #{$maroon-600};
+  --maroon-700: #{$maroon-700};
+  --maroon-800: #{$maroon-800};
+  --maroon-900: #{$maroon-900};
+
+  // Olives
+  --olive: #{$olive};
+  --olive-100: #{$olive-100};
+  --olive-200: #{$olive-200};
+  --olive-300: #{$olive-300};
+  --olive-400: #{$olive-400};
+  --olive-500: #{$olive-500};
+  --olive-600: #{$olive-600};
+  --olive-700: #{$olive-700};
+  --olive-800: #{$olive-800};
+  --olive-900: #{$olive-900};
+
+  // Mints
+  --mint: #{$mint};
+  --mint-100: #{$mint-100};
+  --mint-200: #{$mint-200};
+  --mint-300: #{$mint-300};
+  --mint-400: #{$mint-400};
+  --mint-500: #{$mint-500};
+  --mint-600: #{$mint-600};
+  --mint-700: #{$mint-700};
+  --mint-800: #{$mint-800};
+  --mint-900: #{$mint-900};
+
+  // Lavenders
+  --lavender: #{$lavender};
+  --lavender-100: #{$lavender-100};
+  --lavender-200: #{$lavender-200};
+  --lavender-300: #{$lavender-300};
+  --lavender-400: #{$lavender-400};
+  --lavender-500: #{$lavender-500};
+  --lavender-600: #{$lavender-600};
+  --lavender-700: #{$lavender-700};
+  --lavender-800: #{$lavender-800};
+  --lavender-900: #{$lavender-900};
+
+  // Peaches
+  --peach: #{$peach};
+  --peach-100: #{$peach-100};
+  --peach-200: #{$peach-200};
+  --peach-300: #{$peach-300};
+  --peach-400: #{$peach-400};
+  --peach-500: #{$peach-500};
+  --peach-600: #{$peach-600};
+  --peach-700: #{$peach-700};
+  --peach-800: #{$peach-800};
+  --peach-900: #{$peach-900};
+
+  // Turquoises
+  --turquoise: #{$turquoise};
+  --turquoise-100: #{$turquoise-100};
+  --turquoise-200: #{$turquoise-200};
+  --turquoise-300: #{$turquoise-300};
+  --turquoise-400: #{$turquoise-400};
+  --turquoise-500: #{$turquoise-500};
+  --turquoise-600: #{$turquoise-600};
+  --turquoise-700: #{$turquoise-700};
+  --turquoise-800: #{$turquoise-800};
+  --turquoise-900: #{$turquoise-900};
+
+  // Aquamarines
+  --aquamarine: #{$aquamarine};
+  --aquamarine-100: #{$aquamarine-100};
+  --aquamarine-200: #{$aquamarine-200};
+  --aquamarine-300: #{$aquamarine-300};
+  --aquamarine-400: #{$aquamarine-400};
+  --aquamarine-500: #{$aquamarine-500};
+  --aquamarine-600: #{$aquamarine-600};
+  --aquamarine-700: #{$aquamarine-700};
+  --aquamarine-800: #{$aquamarine-800};
+  --aquamarine-900: #{$aquamarine-900};
+
+  // Base
+  --black: #{$black};
+  --white: #{$white};
+}
