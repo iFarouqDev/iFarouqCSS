@@ -1,0 +1,52 @@
+{
+  "name": "ifarouqcss",
+  "version": "2.3.0",
+  "description": "A modern, lightweight CSS framework designed to give developers expressive, accessible, and production-ready color systems Featuring 36 color families, 92 gradients - with comprehensive components and utilities for those who want more.",
+  "homepage": "https://ifarouqcss.ifarouq.dev/",
+  "main": "dist/ifarouqcss.css",
+  "style": "dist/ifarouqcss.css",
+  "files": [
+    "dist/**/*",
+    "scss/**/*",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "iFarouq",
+    "css",
+    "framework",
+    "ifarouqcss",
+    "responsive",
+    "components",
+    "utilities",
+    "gradients",
+    "colors",
+    "ui",
+    "sass",
+    "scss",
+    "lightweight",
+    "modern"
+  ],
+  "authors": [
+    {
+      "name": "Ibrahim Faruk Yahuza (iFarouq)",
+      "site": "https://ifarouq.dev/"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/ifarouqcss.git"
+  },
+  "support": {
+    "issues": "https://github.com/iFarouqDev/iFarouqCSS/issues",
+    "source": "https://github.com/iFarouqDev/iFarouqCSS"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

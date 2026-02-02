@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+# Testing
+test/
+tests/
+*.test.js
+*.spec.js
+coverage/
+
+# Documentation (if you want to keep docs separate)
+docs/
+examples/
+
+# Build tools
+.sass-cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# CI/CD
+.travis.yml
+.github/
+.gitlab-ci.yml
+circle.yml
+
+# Other
+.env
+.env.local
+.env.*.local
+*.tgz
