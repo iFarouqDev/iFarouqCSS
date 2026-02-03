@@ -1394,6 +1394,14 @@ Choose a primary color family and stick with it throughout your design.
 - Zero JavaScript dependencies
 - Cross-browser compatibility
 
+## Fixed
+- 🐛 Removed accidental self-dependency from package.json
+- ✅ Package now installs correctly via NPM
+
+### Technical
+- Cleaned up package.json configuration
+- No functional changes to CSS files
+
 ---
 
 ## 📊 Framework Stats
