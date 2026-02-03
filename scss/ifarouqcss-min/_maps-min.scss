@@ -1,0 +1,198 @@
+@use 'variables' as *;
+
+// MIN VERSION - 11 Primary Colors + 50 Original Gradients
+// File size: ~600KB (vs 1.5MB full version)
+
+// 11 Primary Colors with all 9 shades (99 total shades)
+$colors: (
+  // Blues
+  "blue": $blue,
+  "blue-100": $blue-100,
+  "blue-200": $blue-200,
+  "blue-300": $blue-300,
+  "blue-400": $blue-400,
+  "blue-500": $blue-500,
+  "blue-600": $blue-600,
+  "blue-700": $blue-700,
+  "blue-800": $blue-800,
+  "blue-900": $blue-900,
+  
+  // Indigos
+  "indigo": $indigo,
+  "indigo-100": $indigo-100,
+  "indigo-200": $indigo-200,
+  "indigo-300": $indigo-300,
+  "indigo-400": $indigo-400,
+  "indigo-500": $indigo-500,
+  "indigo-600": $indigo-600,
+  "indigo-700": $indigo-700,
+  "indigo-800": $indigo-800,
+  "indigo-900": $indigo-900,
+  
+  // Purples
+  "purple": $purple,
+  "purple-100": $purple-100,
+  "purple-200": $purple-200,
+  "purple-300": $purple-300,
+  "purple-400": $purple-400,
+  "purple-500": $purple-500,
+  "purple-600": $purple-600,
+  "purple-700": $purple-700,
+  "purple-800": $purple-800,
+  "purple-900": $purple-900,
+  
+  // Pinks
+  "pink": $pink,
+  "pink-100": $pink-100,
+  "pink-200": $pink-200,
+  "pink-300": $pink-300,
+  "pink-400": $pink-400,
+  "pink-500": $pink-500,
+  "pink-600": $pink-600,
+  "pink-700": $pink-700,
+  "pink-800": $pink-800,
+  "pink-900": $pink-900,
+  
+  // Reds
+  "red": $red,
+  "red-100": $red-100,
+  "red-200": $red-200,
+  "red-300": $red-300,
+  "red-400": $red-400,
+  "red-500": $red-500,
+  "red-600": $red-600,
+  "red-700": $red-700,
+  "red-800": $red-800,
+  "red-900": $red-900,
+  
+  // Oranges
+  "orange": $orange,
+  "orange-100": $orange-100,
+  "orange-200": $orange-200,
+  "orange-300": $orange-300,
+  "orange-400": $orange-400,
+  "orange-500": $orange-500,
+  "orange-600": $orange-600,
+  "orange-700": $orange-700,
+  "orange-800": $orange-800,
+  "orange-900": $orange-900,
+  
+  // Yellows
+  "yellow": $yellow,
+  "yellow-100": $yellow-100,
+  "yellow-200": $yellow-200,
+  "yellow-300": $yellow-300,
+  "yellow-400": $yellow-400,
+  "yellow-500": $yellow-500,
+  "yellow-600": $yellow-600,
+  "yellow-700": $yellow-700,
+  "yellow-800": $yellow-800,
+  "yellow-900": $yellow-900,
+  
+  // Greens
+  "green": $green,
+  "green-100": $green-100,
+  "green-200": $green-200,
+  "green-300": $green-300,
+  "green-400": $green-400,
+  "green-500": $green-500,
+  "green-600": $green-600,
+  "green-700": $green-700,
+  "green-800": $green-800,
+  "green-900": $green-900,
+  
+  // Teals
+  "teal": $teal,
+  "teal-100": $teal-100,
+  "teal-200": $teal-200,
+  "teal-300": $teal-300,
+  "teal-400": $teal-400,
+  "teal-500": $teal-500,
+  "teal-600": $teal-600,
+  "teal-700": $teal-700,
+  "teal-800": $teal-800,
+  "teal-900": $teal-900,
+  
+  // Cyans
+  "cyan": $cyan,
+  "cyan-100": $cyan-100,
+  "cyan-200": $cyan-200,
+  "cyan-300": $cyan-300,
+  "cyan-400": $cyan-400,
+  "cyan-500": $cyan-500,
+  "cyan-600": $cyan-600,
+  "cyan-700": $cyan-700,
+  "cyan-800": $cyan-800,
+  "cyan-900": $cyan-900,
+  
+  // Grays
+  "gray": $gray,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+  
+  // Base
+  "black": $black,
+  "white": $white
+);
+
+// 50 Original Gradients Collection
+$gradients: (
+  // Original Collection (50 Gradients)
+  "aurora-dream": linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%),
+  "ocean-bliss": linear-gradient(120deg, #0dcaf0 0%, #0d6efd 50%, #6610f2 100%),
+  "sunset-glory": linear-gradient(135deg, #ff6b6b 0%, #feca57 50%, #ff9ff3 100%),
+  "emerald-flow": linear-gradient(120deg, #11998e 0%, #38ef7d 50%, #20c997 100%),
+  "royal-purple": linear-gradient(135deg, #7f00ff 0%, #e100ff 50%, #f63384 100%),
+  "cyber-blue": linear-gradient(120deg, #00d4ff 0%, #0066ff 50%, #6610f2 100%),
+  "peachy-paradise": linear-gradient(135deg, #ffa07a 0%, #ff6b9d 50%, #c471ed 100%),
+  "mint-breeze": linear-gradient(120deg, #a8e6cf 0%, #3eecac 50%, #20c997 100%),
+  "crimson-tide": linear-gradient(135deg, #dc3545 0%, #e74c3c 50%, #f63384 100%),
+  "golden-hour": linear-gradient(120deg, #ffc107 0%, #ff8c00 50%, #fd7e14 100%),
+  "lavender-haze": linear-gradient(135deg, #c39bd3 0%, #8e44ad 50%, #6f42c1 100%),
+  "tropical-storm": linear-gradient(120deg, #0dcaf0 0%, #20c997 50%, #0d6efd 100%),
+  "cherry-blossom": linear-gradient(135deg, #ffc3a0 0%, #ffafbd 50%, #f63384 100%),
+  "deep-space": linear-gradient(120deg, #000428 0%, #004e92 50%, #6610f2 100%),
+  "neon-nights": linear-gradient(135deg, #ff006e 0%, #fb5607 50%, #ffbe0b 100%),
+  "aqua-marine": linear-gradient(120deg, #00f5ff 0%, #00d9ff 50%, #0dcaf0 100%),
+  "fire-opal": linear-gradient(135deg, #f12711 0%, #f5af19 50%, #fd7e14 100%),
+  "purple-haze": linear-gradient(120deg, #8e2de2 0%, #4a00e0 50%, #6610f2 100%),
+  "rose-gold": linear-gradient(135deg, #ed4264 0%, #ffedbc 50%, #f63384 100%),
+  "electric-lime": linear-gradient(120deg, #a8ff78 0%, #78ffd6 50%, #20c997 100%),
+  "cosmic-fusion": linear-gradient(135deg, #ff00cc 0%, #333399 50%, #6610f2 100%),
+  "tangerine-dream": linear-gradient(120deg, #ffb75e 0%, #ed8f03 50%, #fd7e14 100%),
+  "mystic-violet": linear-gradient(135deg, #a044ff 0%, #6a3093 50%, #6f42c1 100%),
+  "turquoise-wave": linear-gradient(120deg, #13547a 0%, #80d0c7 50%, #0dcaf0 100%),
+  "moonlight-serenade": linear-gradient(135deg, #4b6cb7 0%, #182848 50%, #000000 100%),
+  "candy-crush": linear-gradient(120deg, #ff6ec4 0%, #7873f5 50%, #4facfe 100%),
+  "rainbow-sherbet": linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #feca57 100%),
+  "northern-lights": linear-gradient(120deg, #00f260 0%, #0575e6 50%, #02aab0 100%),
+  "desert-mirage": linear-gradient(135deg, #fad961 0%, #f76b1c 50%, #fc4a1a 100%),
+  "glacier-blue": linear-gradient(120deg, #e0eafc 0%, #cfdef3 50%, #4facfe 100%),
+  "velvet-night": linear-gradient(135deg, #2e1437 0%, #3f0d12 50%, #1a0033 100%),
+  "strawberry-lemonade": linear-gradient(120deg, #ffecd2 0%, #fcb69f 50%, #ff9a9e 100%),
+  "emerald-dream": linear-gradient(135deg, #10d164 0%, #05f5a0 50%, #00d4aa 100%),
+  "blueberry-muffin": linear-gradient(120deg, #4e54c8 0%, #8f94fb 50%, #6c63ff 100%),
+  "phoenix-fire": linear-gradient(135deg, #f83600 0%, #f9d423 50%, #fe8c00 100%),
+  "tropical-paradise": linear-gradient(120deg, #fa8bff 0%, #2bd2ff 50%, #2bff88 100%),
+  "midnight-city": linear-gradient(135deg, #232526 0%, #414345 50%, #000000 100%),
+  "cotton-candy": linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 50%, #d4fc79 100%),
+  "volcanic-ash": linear-gradient(135deg, #373b44 0%, #4286f4 50%, #0f2027 100%),
+  "honey-dew": linear-gradient(120deg, #ffe259 0%, #ffa751 50%, #ff6b9d 100%),
+  "arctic-frost": linear-gradient(135deg, #b3ffab 0%, #12fff7 50%, #00d4ff 100%),
+  "ruby-red": linear-gradient(120deg, #aa076b 0%, #61045f 50%, #d5004c 100%),
+  "forest-green": linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%),
+  "peacock-feather": linear-gradient(120deg, #16d9e3 0%, #30c7ec 50%, #46aef7 100%),
+  "sangria-sunset": linear-gradient(135deg, #ff6a00 0%, #ee0979 50%, #f90c71 100%),
+  "sage-wisdom": linear-gradient(120deg, #a8edea 0%, #fed6e3 50%, #d4fc79 100%),
+  "celestial-blue": linear-gradient(135deg, #30cfd0 0%, #330867 50%, #667db6 100%),
+  "coral-reef": linear-gradient(120deg, #fa709a 0%, #fee140 50%, #30cfd0 100%),
+  "starry-night": linear-gradient(135deg, #000428 0%, #004e92 50%, #43cea2 100%),
+  "dragon-scale": linear-gradient(120deg, #4e00c2 0%, #7f00ff 50%, #e100ff 100%)
+);
