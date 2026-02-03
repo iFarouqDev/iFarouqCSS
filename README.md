@@ -5,25 +5,64 @@
 
 **A Comprehensive Modern SASS Color Framework**
 
-[![Version](https://img.shields.io/badge/version-2.2.1-blue.svg)](https://github.com/iFarouqDev/iFarouqCSS)
+[![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](https://github.com/iFarouqDev/iFarouqCSS)
+![npm downloads](https://img.shields.io/npm/dm/ifarouqcss.svg)
+![GitHub stars](https://img.shields.io/github/stars/iFarouqDev/ifarouqcss.svg)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![SASS](https://img.shields.io/badge/SASS-Powered-pink.svg)](https://sass-lang.com/)
+<!-- ![npm version](https://img.shields.io/npm/v/ifarouqcss.svg) -->
+<!-- ![npm bundle size](https://img.shields.io/bundlephobia/min/ifarouqcss) -->
 
 **36 Color Families** • **326+ Shades** • **92 Gradients** • **Glassmorphism** • **Hover & Active States**
+
+**moto:** ...we're not trying to replace existing frameworks. We focus on what they don't prioritize deeply!
 
 </div>
 
 # iFarouq Color Framework Documentation
 
-A comprehensive, modern SASS color framework featuring **36 color families** with **326+ color variations**, **92 stunning gradients**, and extensive utility classes including hover and active states.
+A comprehensive, modern, lightweight CSS framework designed to give developers expressive, accessible, and production-ready color systems featuring **36 color families** with **326+ color variations**, **92 stunning gradients** - with extensive components and utilities for those who want more.
 
-**Version**: 2.2.1  
-**Last Update**: December 17th, 2025  
+**Version**: 2.3.0  
+**Last Update**: February 01, 2026  
 **Official Site**: https://ifarouqcss.ifarouq.dev
 
 ---
 
-## 📦 Installation
+## 🎯 Choose Your Version
+
+We offer **6 different builds** to suit your needs - from full-featured to ultra-lightweight!
+
+### Quick Version Selector
+
+**👉 Just starting or exploring?** → [Full Version](#-full-version) (1.5MB)
+
+**👉 Building a production website?** → [Min Version](#-min-version) (533.2KB) ⭐ **Recommended**
+
+**👉 Need the smallest file size?** → [Lite Version](#-lite-version) (287.2KB) ⭐ **Best Performance**
+
+**👉 Want to use colors and gradients?** → [Colors Only Version](#-full-version) (8.2KB)
+
+**👉 Using with Tailwind/other utilities?** → [Components Only Version](#-components-version) (400.8KB)
+
+**👉 Using with Bootstrap/custom components?** → [Utilities Only Version](#-utilities-version) (1.1MB)
+
+---
+
+## 📊 Version Comparison
+
+| Version | Size | Colors | Gradients | Components | Utilities | Best For |
+|---------|------|--------|-----------|------------|-----------|----------|
+| **[Full](#-full-version)** | 1.5MB | 36 (324 shades) | 92 | ✅ | ✅ | Development, testing all features |
+| **[Min](#-min-version)** | 533.2KB | 11 (99 shades) | 50 | ✅ | ✅ | Most production websites ⭐ |
+| **[Lite](#-lite-version)** | 287.2KB | 6 (54 shades) | 25 | ✅ | ✅ | Smaller sites, best performance ⭐ |
+| **[Colors](#-colors-version)** | 8.2KB | All | All | ❌ | ❌ | Compatible with every sites, light-weight, colors experience ⭐ |
+| **[Components](#-components-version)** | 1.1MB | All | All | ✅ | ❌ | Combine with Tailwind/utilities |
+| **[Utilities](#-utilities-version)** | 400.8KB | All | All | ❌ | ✅ | Combine with Bootstrap/components |
+
+---
+
+## 💾 Build from Source
 
 ### Prerequisites
 - SASS/SCSS compiler (Dart Sass recommended)
@@ -34,52 +73,354 @@ A comprehensive, modern SASS color framework featuring **36 color families** wit
 1. **Download/Clone** the framework files to your project
 2. **Place all SCSS files** in a `scss/` directory:
    ```
-   scss/
-   ├── _variables.scss
-   ├── _maps.scss
-   ├── _mixins.scss
-   ├── _components.scss
-   ├── _utilities.scss
-   └── colors-framework.scss
+    ifarouqcss/
+        ├── scss/
+            ├── ifarouqcss/
+            │    ├── _variables.scss
+            │    ├── _maps.scss
+            │    ├── _mixins.scss
+            │    ├── _components.scss
+            │    ├── _utilities.scss
+            │    └── ifarouqcss.scss
+            │
+            ├── ifarouqcss-colors/
+            │    ├── _variables.scss
+            │    ├── _maps.scss
+            │    └── ifarouqcss-colors.scss
+            │
+            ├── ifarouqcss-components/
+            │    ├── _variables.scss
+            │    ├── _maps.scss
+            │    ├── _components.scss
+            │    └── ifarouqcss-components.scss
+            │
+            ├── ifarouqcss-lite/
+            │    ├── _variables.scss
+            │    ├── _maps-lite.scss
+            │    ├── _mixins.scss
+            │    ├── _components.scss
+            │    ├── _utilities.scss
+            │    └── ifarouqcss-lite.scss
+            │
+            ├── ifarouqcss-min/
+            │    ├── _variables.scss
+            │    ├── _maps-min.scss
+            │    ├── _mixins.scss
+            │    ├── _components.scss
+            │    ├── _utilities.scss
+            │    └── ifarouqcss-min.scss
+            │
+            └── ifarouqcss-utilities/
+                ├── _variables.scss
+                ├── _maps.scss
+                ├── _mixins.scss
+                ├── _components.scss
+                ├── _utilities.scss
+                └── ifarouqcss-utilities.scss
    ```
 
-3. **Check if you have SASS on your Machine:**:
-   ```bash
-   sass --version
-   ```
-   If you have already installed SASS on your machine, skip step 4 and move to step 5
+3. **Compile the framework**:
 
-4. **Install SASS on your Machine**:
-   ```bash
-   npm install -g sass
-   ```
-5. **Compile the framework**:
-   ```bash
-   sass scss/colors-framework.scss dist/iFarouqCSS.css --style=compressed
+    ```bash
+    # Full Version
+    sass scss/ifarouqcss/ifarouqcss.scss dist/ifarouqcss.css --style=compressed
+
+    # Min Version
+    sass scss/ifarouqcss-min/ifarouqcss-min.scss dist/ifarouqcss-min.css --style=compressed
+
+    # Lite Version
+   sass scss/ifarouqcss-lite/ifarouqcss-lite.scss dist/ifarouqcss-lite.css --style=compressed
+
+   # Colors-Only Version
+   sass scss/ifarouqcss-colors/ifarouqcss-colors.scss dist/ifarouqcss-colors.css --style=compressed
+
+    # Components-Only Version
+    sass scss/ifarouqcss-components/ifarouqcss-components.scss dist/ifarouqcss-components.css --style=compressed
+
+    # Utilities-Only Version
+    sass scss/ifarouqcss-utilities/ifarouqcss-utilities.scss dist/ifarouqcss-utilities.css --style=compressed
    ```
 
-6. **Link in your HTML**:
-   ```html
-   <link rel="stylesheet" href="dist/iFarouqCSS.css">
+
+4. **Link in your HTML**:
+    ```html
+    <!-- Full Version -->
+    <link rel="stylesheet" href="dist/ifarouqcss.css">
+
+    <!-- Min Version -->
+    <link rel="stylesheet" href="dist/ifarouqcss-min.css">
+
+    <!-- Lite Version -->
+    <link rel="stylesheet" href="dist/ifarouqcss-lite.css">
+
+    <!-- Colors-Only Version -->
+    <link rel="stylesheet" href="dist/ifarouqcss-colors.css">
+
+    <!-- Component-Only Version -->
+    <link rel="stylesheet" href="dist/ifarouqcss-components.css">
+
+    <!-- Utilities-Only Version -->
+    <link rel="stylesheet" href="dist/ifarouqcss-utilities.css">
    ```
 
 ---
 
-<h2 class="text-gradient-candy-crush">⇅ Download the Compiled file</h2>
-<br>
+<!-- <h2 class="text-gradient-candy-crush">⇅ Download the Compiled file</h2> -->
+## ⇅ Download the Compiled file
+
 <p>
-    No need to rush with the compilation! We’ve got you covered. iFarouqCSS-v2.1.0 is all set. <a target="_blank" href="https://ifarouqcss.ifarouq.dev" alt="iFarouqCSS Compiled file">Download</a> it now and dive right in!
+    No need to rush with the compilation! We’ve got you covered. iFarouqCSS-v2.3.0 is all set, all you need is to choosee your suitable version:👇🏼 
 </p>
+
+---
+
+## ♾️ Full Version
+
+**Size**: 1.5MB | **Colors**: 36 families (324 shades) | **Gradients**: 92
+
+### Includes:
+- All 36 color families with 9 shades each
+- 92 stunning gradients (50 original + 42 custom)
+- All components (buttons, cards, badges, alerts, progress bars)
+- All utilities (spacing, typography, hover, active states)
+- Glassmorphism effects
+- Everything!
+
+### When to Use:
+- **Development**: Testing all features
+- **Exploration**: Learning the framework
+- **No file size constraints**: Internal tools, admin panels
+
+### Download:
+<a target="_blank" href="/dist/ifarouqcss.css" download alt="iFarouqCSS Full Compiled Version">Full Version</a>
+
+### Installation:
+```html
+<link rel="stylesheet" href="dist/ifarouqcss.css">
+```
+
+**Color Families**: blue, indigo, purple, pink, red, orange, yellow, green, teal, cyan, gray, lime, emerald, sky, violet, fuchsia, rose, amber, slate, zinc, stone, neutral, crimson, coral, salmon, gold, bronze, silver, navy, maroon, olive, mint, lavender, peach, turquoise, aquamarine
+
+---
+
+## 🎨 Colors Version
+
+**Size**: 8.2KB | **Colors**: All families (99 shades) | **Gradients**: All
+
+### Includes:
+- All 36 color families with 9 shades each
+- All 92 stunning gradients (50 original + 42 custom)
+- 0 Components
+- 0 Utilities
+- **99% smaller** than full version
+
+### When to Use:
+- **Production websites**: Perfect balance of features and size
+- **Most projects**: Has every colors you'll need and more
+- **Best value**: Maximum features with optimized size
+
+### Download:
+<a target="_blank" href="/dist/ifarouqcss-colors.css" download alt="iFarouqCSS Colors Compiled Version">Colors Version</a>
+
+### Installation:
+```html
+<link rel="stylesheet" href="dist/ifarouqcss-colors.css">
+```
+
+**Color Families**: blue, indigo, purple, pink, red, orange, yellow, green, teal, cyan, gray
+
+**⭐ Recommended for most projects!**
+
+---
+
+## 🎯 Min Version
+
+**Size**: 533.2KB | **Colors**: 11 families (99 shades) | **Gradients**: 50
+
+### Includes:
+- 11 primary color families with all 9 shades
+- 50 original gradient collection
+- All components and utilities
+- **60% smaller** than full version
+
+### When to Use:
+- **Production websites**: Perfect balance of features and size
+- **Most projects**: Has all the colors you'll actually use
+- **Best value**: Maximum features with optimized size
+
+### Download:
+<a target="_blank" href="/dist/ifarouqcss-min.css" download alt="iFarouqCSS Min Compiled Version">Min Version</a>
+
+### Installation:
+```html
+<link rel="stylesheet" href="dist/ifarouqcss-min.css">
+```
+
+**Color Families**: blue, indigo, purple, pink, red, orange, yellow, green, teal, cyan, gray
+
+**⭐ Recommended for most projects!**
+
+---
+
+## ⚡ Lite Version
+
+**Size**: 287.2KB | **Colors**: 6 families (54 shades) | **Gradients**: 25
+
+### Includes:
+- 6 essential color families with all 9 shades
+- 25 most popular gradients
+- All components and utilities
+- **83% smaller** than full version
+
+### When to Use:
+- **Production sites**: Where file size matters
+- **Landing pages**: Fast loading times
+- **Essential colors only**: You don't need every color
+
+### Download:
+<a target="_blank" href="/dist/ifarouqcss-lite.css" download alt="iFarouqCSS Lite Compiled Version">Lite Version</a>
+
+### Installation:
+```html
+<link rel="stylesheet" href="dist/ifarouqcss-lite.css">
+```
+
+**Color Families**: blue, red, green, yellow, purple, gray
+
+**⭐ Best for performance-focused projects!**
+
+---
+
+## 🧩 Components Version
+
+**Size**: 1.1MB | **Components**: All | **Utilities**: None
+
+### Includes:
+- All button components (solid, outline, gradient, all sizes)
+- Card components
+- Badge & pill components
+- Alert components
+- Progress bars
+- **NO utility classes** (text, bg, spacing, etc.)
+
+### When to Use:
+- **With Tailwind CSS**: Use Tailwind utilities + iFarouq components
+- **With other frameworks**: Combine with any utility framework
+- **Custom utilities**: You have your own spacing/color system
+
+### Download:
+<a target="_blank" href="/dist/ifarouqcss-components.css" download alt="iFarouqCSS Components Compiled Version">Components Version</a>
+
+### Installation:
+```html
+<!-- Example: With Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="dist/ifarouqcss-components.css">
+```
+
+---
+
+## 🛠️ Utilities Version
+
+**Size**: 400.8KB | **Utilities**: All | **Components**: None
+
+### Includes:
+- Text & background color utilities
+- Border utilities
+- Gradient utilities
+- Hover & active states
+- Spacing (margin, padding)
+- Typography (font sizes)
+- Shadows & opacity
+- Glassmorphism
+- **NO component classes**
+
+### When to Use:
+- **With Bootstrap**: Use Bootstrap components + iFarouq colors
+- **Custom components**: You have your own button/card styles
+- **Color utilities only**: Just need the color system
+
+### Download:
+<a target="_blank" href="/dist/ifarouqcss-utilities.css" download alt="iFarouqCSS Utilities Compiled Version">Utilities Version</a>
+
+### Installation:
+```html
+<!-- Example: With Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="dist/ifarouqcss-utilities.css">
+```
+
 <p><code class="liquid-glass-glacier-blue rounded rounded" style="padding: 15px; font-weight: bolder;">< Happy Coding 🎉👨🏻‍💻 /></code></p>
 
 ---
 
+## 📦 Installation
+
+### CDN (Recommended for Quick Start) 🆕
+
+```html
+<!-- Full Version (All features) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss.css">
+
+<!-- Min Version (Recommended for most sites) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss-min.css">
+
+<!-- Lite Version (Smallest file size) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss-lite.css">
+
+<!-- Colors-Only Version (Colors only Experience) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss-colors.css">
+
+<!-- Components-Only Version (Component only Experience) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss-lite.css">
+
+<!-- Utilities-Only Version (Utilities only Experience) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss-lite.css">
+```
+
+### NPM (Recommended for Laravel, React, Vue, etc. ) 🆕
+
+### 🛠️ Development
+***Prerequisites:*** You must have Node.js 12.0.0 or higher installed on your machine!
+
+
+```bash
+# Intall iFarouqCSS in your Project
+
+npm i ifarouqcss
+```
+
+```js
+/* 
+ * In your main JS file (React, Vue, etc.)
+ * or in app.js in Laravel
+*/
+
+// Full version
+import 'ifarouqcss/dist/ifarouqcss.css';
+
+// Colors only
+import 'ifarouqcss/dist/ifarouqcss-colors.css';
+
+// Lite version
+import 'ifarouqcss/dist/ifarouqcss-lite.css';
+
+// Components only
+import 'ifarouqcss/dist/ifarouqcss-components.css';
+
+// Utilities only
+import 'ifarouqcss/dist/ifarouqcss-utilities.css';
+
+// Min version
+import 'ifarouqcss/dist/ifarouqcss-min.css';
+```
+---
 
 ## 🎨 Color System
 
 ### 36 Complete Color Families
 
-Each color family includes **9 full shades** (100-900) for maximum flexibility:
+All versions include their respective color families with **9 full shades** (100-900) for maximum flexibility:
 
 **Primary Colors:**
 - **Blue** - `#0D6EFD` - Modern primary blue
@@ -144,6 +485,8 @@ Each color family follows a consistent 9-shade system:
 ---
 
 ## 🌈 Gradient Collection - 92 Total Gradients!
+
+**Full-Version**: All gradients | Colors-Version: All gradients | **Min-Version**: 50 gradients | **Lite-Version**: 25 gradients | Components-Version: All gradients | Utilities-Version: All gradients |
 
 ### Original Collection (50 Gradients)
 
@@ -652,11 +995,12 @@ Rounded badge alternatives:
 <span class="pill-bronze-600">Legacy</span>
 ```
 
-**Gradient Pills 🆕**:
+**Gradient Pills**:
 ```html
 <span class="pill-gradient-royal-gold">Gold</span>
 <span class="pill-gradient-hot-pink">Hot</span>
 ```
+
 
 ### Alerts
 
@@ -1005,24 +1349,49 @@ Choose a primary color family and stick with it throughout your design.
 
 ---
 
-## 📊 What's New in v2.2.1
+## 🔥 What's New in v2.3.0 
 
-### 🐛 Bug Fixes
-- ✅ Fixed gradient text unwanted padding
-- ✅ Removed default button padding
-- ✅ Improved gradient color variations for better distinction
+### 🎁 Added - New Build Options
+- 🆕 ✨ Colors-only version (8.2KB) - All colors, all gradients
+- 🆕 ✨ Min version (400.8KB) - 11 colors, 50 gradients
+- 🆕 ✨ Lite version (278.2KB) - 6 colors, 25 gradients
+- 🆕 ✨ Components-only version (1.1MB)
+- 🆕 ✨ Utilities-only version (1.1MB)
 
-### ✨ New Features
-- 🆕 Button size utilities (xs, sm, md, lg, xl, xxl)
-- 🆕 Margin utilities (m, mt, mb, ml, mr, my, mx: 0-12)
-- 🆕 Padding utilities (p, pt, pb, pl, pr, py, px: 0-12)
-- 🆕 Font size utilities (fs-1 to fs-12)
+### 🎁 Added - New Installation Options
+- 🆕 ✨ **NPM Package Support** - Install via `npm install ifarouqcss`
+- 🆕 ✨ **CDN Support** - Available on jsDelivr and UNPKG
+- 🆕 ✨ Published all 6 versions above to NPM:
+    - Full (1.5MB)
+    - Colors (8.2KB)
+    - Min (533.2KB)
+    - Lite (287.2KB)
+    - Components (1.1MB)
+    - Utilities (400.8KB)
+- 🆕 ✨ Package.json configuration
+- 🆕 ✨ NPM distribution pipeline
+- 🆕 ✨ MIT License file
+
+
+### 👨🏻‍💻 Changed
+- Optimized file structure for NPM distribution
+- Files naming conventions for easy access
+- Documentation migrated from SPA to multi-page layout
+
 
 ### 🎨 Improvements
-- Updated 42 gradient colors for more diversity
-- Better spacing scale (0.25rem increments)
-- Responsive typography scale
-- More flexible component sizing
+- Updated README with NPM and CDN installation instructions
+- Interactive documentation site Repolished
+- Improved navigation and discoverability
+- Enhanced code examples
+- Better mobile documentation experience
+
+### ✨ New Features
+- Modular architecture - use only what you need
+- Production-ready
+- Optimized for performance
+- Zero JavaScript dependencies
+- Cross-browser compatibility
 
 ---
 
@@ -1070,16 +1439,57 @@ Choose a primary color family and stick with it throughout your design.
 
 ```
 your-project/
-├── scss/
-│   ├── _variables.scss      # 326 color variables
-│   ├── _maps.scss            # Color maps & 92 gradients
-│   ├── _mixins.scss          # Reusable SASS mixins
-│   ├── _components.scss      # Styled components
-│   ├── _utilities.scss       # Utility classes + hover/active
-│   └── colors-framework.scss # Main entry point
-├── dist/
-│   └── iFarouqCSS.css       # Compiled CSS
-└── index.html                # Your HTML
+    ├── scss/
+    │   ├── ifarouqcss/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps.scss
+    │   │    ├── _mixins.scss
+    │   │    ├── _components.scss
+    │   │    ├── _utilities.scss
+    │   │    └── ifarouqcss.scss
+    │   │
+    │   ├── ifarouqcss-colors/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps.scss
+    │   │    └── ifarouqcss-colors.scss
+    │   │
+    │   ├── ifarouqcss-components/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps.scss
+    │   │    ├── _components.scss
+    │   │    └── ifarouqcss-components.scss
+    │   │
+    │   ├── ifarouqcss-lite/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps-lite.scss
+    │   │    ├── _mixins.scss
+    │   │    ├── _components.scss
+    │   │    ├── _utilities.scss
+    │   │    └── ifarouqcss-lite.scss
+    │   │
+    │   ├── ifarouqcss-min/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps-min.scss
+    │   │    ├── _mixins.scss
+    │   │    ├── _components.scss
+    │   │    ├── _utilities.scss
+    │   │    └── ifarouqcss-min.scss
+    │   │
+    │   └── ifarouqcss-utilities/
+    │        ├── _variables.scss
+    │        ├── _maps.scss
+    │        ├── _mixins.scss
+    │        ├── _components.scss
+    │        ├── _utilities.scss
+    │        └── ifarouqcss-utilities.scss
+    ├── dist/                           # Compiled CSS Files
+    │   ├── iFarouqcss.css
+    │   ├── ifarouqcss-colors.css
+    │   ├── ifarouqcss-components.css
+    │   ├── ifarouqcss-lite.css
+    │   ├── ifarouqcss-min.css
+    │   └── ifarouqcss-utilities.css       
+    └── index.html                      # Your HTML
 ```
 
 ---
@@ -1127,8 +1537,8 @@ MIT License - free to use for personal and commercial projects.
 
 Built with modern SASS/SCSS and cutting-edge CSS features.
 
-**Version**: 2.2.1  
-**Release Date**: December 17, 2025
+**Version**: 2.3.0  
+**Release Date**: February 01, 2026
 
 ---
 
@@ -1136,11 +1546,15 @@ Built with modern SASS/SCSS and cutting-edge CSS features.
 
 For issues, suggestions, or questions:
 - Visit my Portfolio: https://ifarouq.dev
-- Open an issue on GitHub: https://github.com/iFarouqDev/iFarouqCSS
+- Open an issue on GitHub: https://github.com/iFarouqDev/iFarouqCSS/issues
 - Email: [ifarouq@ifarouq.dev](mailto:ifarouq@ifarouq.dev)
 - Twitter: https://x.com/iFarouqDev
 
 ---
+
+## 🌟 Show Your Support
+### Give a ⭐️ if this project helped you!
+
 
 ## 🗺️ Roadmap
 
@@ -1152,11 +1566,11 @@ For issues, suggestions, or questions:
 - [x] Margin uitilties
 - [x] Padding uitilties
 - [x] Font size uitilties
-- [x] Pill Gradients Components
+- [x] Version tree
+- [x] CDN hosting
+- [x] NPM package
 - [ ] Dark mode variants
 - [ ] Animation utilities
-- [ ] CDN hosting
-- [ ] NPM package
 - [ ] React/Vue components
 - [ ] Figma design tokens
 
