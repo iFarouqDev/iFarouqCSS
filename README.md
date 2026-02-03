@@ -5,12 +5,13 @@
 
 **A Comprehensive Modern SASS Color Framework**
 
-[![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](https://github.com/iFarouqDev/iFarouqCSS)
+
+![Version](https://img.shields.io/npm/v/ifarouqcss.svg)
 ![npm downloads](https://img.shields.io/npm/dm/ifarouqcss.svg)
 ![GitHub stars](https://img.shields.io/github/stars/iFarouqDev/ifarouqcss.svg)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![SASS](https://img.shields.io/badge/SASS-Powered-pink.svg)](https://sass-lang.com/)
-<!-- ![npm version](https://img.shields.io/npm/v/ifarouqcss.svg) -->
+<!-- [![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](https://github.com/iFarouqDev/iFarouqCSS) -->
 <!-- ![npm bundle size](https://img.shields.io/bundlephobia/min/ifarouqcss) -->
 
 **36 Color Families** • **326+ Shades** • **92 Gradients** • **Glassmorphism** • **Hover & Active States**
