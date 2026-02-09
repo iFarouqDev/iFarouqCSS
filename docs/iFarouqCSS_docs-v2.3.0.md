@@ -1,12 +1,12 @@
 <div align="center">
 
-![iFarouqCSS Logo](logo/iFarouqCSS.webp)
+![iFarouqCSS Logo](../logo/iFarouqCSS.webp)
 # iFarouqCSS
 
 **A Comprehensive Modern SASS Color Framework**
 
 [![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](https://github.com/iFarouqDev/iFarouqCSS)
-![npm downloads](https://img.shields.io/npm/dm/ifarouqcss.svg)
+![npm downloads](https://img.shields.io/npm/dt/ifarouqcss.svg)
 ![GitHub stars](https://img.shields.io/github/stars/iFarouqDev/ifarouqcss.svg)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![SASS](https://img.shields.io/badge/SASS-Powered-pink.svg)](https://sass-lang.com/)
@@ -15,7 +15,7 @@
 
 **36 Color Families** • **326+ Shades** • **92 Gradients** • **Glassmorphism** • **Hover & Active States**
 
-**moto:** ...we're not trying to replace existing frameworks. We focus on what they don't prioritize deeply!
+**moto:** <span style="font-family: 'apple chancery'">...we're not trying to replace existing frameworks. We focus on what they don't prioritize deeply!
 
 </div>
 
@@ -31,7 +31,8 @@ A comprehensive, modern, lightweight CSS framework designed to give developers e
 
 ## 🎯 Choose Your Version
 
-We offer **6 different builds** to suit your needs - from full-featured to ultra-lightweight!
+We offer **5 different builds** to suit your needs - from full-featured to ultra-lightweight!⚡️
+We also offer **2 more indipendent options** to help you use the framework the way see feet, to make sure it serve you well!🤝🏼😄
 
 ### Quick Version Selector
 
@@ -40,8 +41,6 @@ We offer **6 different builds** to suit your needs - from full-featured to ultra
 **👉 Building a production website?** → [Min Version](#-min-version) (533.2KB) ⭐ **Recommended**
 
 **👉 Need the smallest file size?** → [Lite Version](#-lite-version) (287.2KB) ⭐ **Best Performance**
-
-**👉 Want to use colors and gradients?** → [Colors Only Version](#-full-version) (8.2KB)
 
 **👉 Using with Tailwind/other utilities?** → [Components Only Version](#-components-version) (400.8KB)
 
@@ -59,109 +58,6 @@ We offer **6 different builds** to suit your needs - from full-featured to ultra
 | **[Colors](#-colors-version)** | 8.2KB | All | All | ❌ | ❌ | Compatible with every sites, light-weight, colors experience ⭐ |
 | **[Components](#-components-version)** | 1.1MB | All | All | ✅ | ❌ | Combine with Tailwind/utilities |
 | **[Utilities](#-utilities-version)** | 400.8KB | All | All | ❌ | ✅ | Combine with Bootstrap/components |
-
----
-
-## 💾 Build from Source
-
-### Prerequisites
-- SASS/SCSS compiler (Dart Sass recommended)
-- Node.js (optional, for npm scripts)
-
-### Setup
-
-1. **Download/Clone** the framework files to your project
-2. **Place all SCSS files** in a `scss/` directory:
-   ```
-    ifarouqcss/
-        ├── scss/
-            ├── ifarouqcss/
-            │    ├── _variables.scss
-            │    ├── _maps.scss
-            │    ├── _mixins.scss
-            │    ├── _components.scss
-            │    ├── _utilities.scss
-            │    └── ifarouqcss.scss
-            │
-            ├── ifarouqcss-colors/
-            │    ├── _variables.scss
-            │    ├── _maps.scss
-            │    └── ifarouqcss-colors.scss
-            │
-            ├── ifarouqcss-components/
-            │    ├── _variables.scss
-            │    ├── _maps.scss
-            │    ├── _components.scss
-            │    └── ifarouqcss-components.scss
-            │
-            ├── ifarouqcss-lite/
-            │    ├── _variables.scss
-            │    ├── _maps-lite.scss
-            │    ├── _mixins.scss
-            │    ├── _components.scss
-            │    ├── _utilities.scss
-            │    └── ifarouqcss-lite.scss
-            │
-            ├── ifarouqcss-min/
-            │    ├── _variables.scss
-            │    ├── _maps-min.scss
-            │    ├── _mixins.scss
-            │    ├── _components.scss
-            │    ├── _utilities.scss
-            │    └── ifarouqcss-min.scss
-            │
-            └── ifarouqcss-utilities/
-                ├── _variables.scss
-                ├── _maps.scss
-                ├── _mixins.scss
-                ├── _components.scss
-                ├── _utilities.scss
-                └── ifarouqcss-utilities.scss
-   ```
-
-3. **Compile the framework**:
-
-    ```bash
-    # Full Version
-    sass scss/ifarouqcss/ifarouqcss.scss dist/ifarouqcss.css --style=compressed
-
-    # Min Version
-    sass scss/ifarouqcss-min/ifarouqcss-min.scss dist/ifarouqcss-min.css --style=compressed
-
-    # Lite Version
-   sass scss/ifarouqcss-lite/ifarouqcss-lite.scss dist/ifarouqcss-lite.css --style=compressed
-
-   # Colors-Only Version
-   sass scss/ifarouqcss-colors/ifarouqcss-colors.scss dist/ifarouqcss-colors.css --style=compressed
-
-    # Components-Only Version
-    sass scss/ifarouqcss-components/ifarouqcss-components.scss dist/ifarouqcss-components.css --style=compressed
-
-    # Utilities-Only Version
-    sass scss/ifarouqcss-utilities/ifarouqcss-utilities.scss dist/ifarouqcss-utilities.css --style=compressed
-   ```
-
-
-4. **Link in your HTML**:
-    ```html
-    <!-- Full Version -->
-    <link rel="stylesheet" href="dist/ifarouqcss.css">
-
-    <!-- Min Version -->
-    <link rel="stylesheet" href="dist/ifarouqcss-min.css">
-
-    <!-- Lite Version -->
-    <link rel="stylesheet" href="dist/ifarouqcss-lite.css">
-
-    <!-- Colors-Only Version -->
-    <link rel="stylesheet" href="dist/ifarouqcss-colors.css">
-
-    <!-- Component-Only Version -->
-    <link rel="stylesheet" href="dist/ifarouqcss-components.css">
-
-    <!-- Utilities-Only Version -->
-    <link rel="stylesheet" href="dist/ifarouqcss-utilities.css">
-   ```
 
 ---
 
@@ -200,36 +96,6 @@ We offer **6 different builds** to suit your needs - from full-featured to ultra
 ```
 
 **Color Families**: blue, indigo, purple, pink, red, orange, yellow, green, teal, cyan, gray, lime, emerald, sky, violet, fuchsia, rose, amber, slate, zinc, stone, neutral, crimson, coral, salmon, gold, bronze, silver, navy, maroon, olive, mint, lavender, peach, turquoise, aquamarine
-
----
-
-## 🎨 Colors Version
-
-**Size**: 8.2KB | **Colors**: All families (99 shades) | **Gradients**: All
-
-### Includes:
-- All 36 color families with 9 shades each
-- All 92 stunning gradients (50 original + 42 custom)
-- 0 Components
-- 0 Utilities
-- **99% smaller** than full version
-
-### When to Use:
-- **Production websites**: Perfect balance of features and size
-- **Most projects**: Has every colors you'll need and more
-- **Best value**: Maximum features with optimized size
-
-### Download:
-<a target="_blank" href="/dist/ifarouqcss-colors.css" download alt="iFarouqCSS Colors Compiled Version">Colors Version</a>
-
-### Installation:
-```html
-<link rel="stylesheet" href="dist/ifarouqcss-colors.css">
-```
-
-**Color Families**: blue, indigo, purple, pink, red, orange, yellow, green, teal, cyan, gray
-
-**⭐ Recommended for most projects!**
 
 ---
 
@@ -360,22 +226,22 @@ We offer **6 different builds** to suit your needs - from full-featured to ultra
 
 ```html
 <!-- Full Version (All features) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ifarouqcss@2/dist/ifarouqcss.css">
 
 <!-- Min Version (Recommended for most sites) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss-min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ifarouqcss@2/dist/ifarouqcss-min.css">
 
 <!-- Lite Version (Smallest file size) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss-lite.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ifarouqcss@2/dist/ifarouqcss-lite.css">
 
 <!-- Colors-Only Version (Colors only Experience) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss-colors.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ifarouqcss@2/dist/ifarouqcss-colors.css">
 
 <!-- Components-Only Version (Component only Experience) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss-lite.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ifarouqcss@2/dist/ifarouqcss-lite.css">
 
 <!-- Utilities-Only Version (Utilities only Experience) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ifarouq/ifarouqcss@2/dist/ifarouqcss-lite.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ifarouqcss@2/dist/ifarouqcss-lite.css">
 ```
 
 ### NPM (Recommended for Laravel, React, Vue, etc. ) 🆕
@@ -402,6 +268,9 @@ import 'ifarouqcss/dist/ifarouqcss.css';
 // Colors only
 import 'ifarouqcss/dist/ifarouqcss-colors.css';
 
+// Min version
+import 'ifarouqcss/dist/ifarouqcss-min.css';
+
 // Lite version
 import 'ifarouqcss/dist/ifarouqcss-lite.css';
 
@@ -411,8 +280,6 @@ import 'ifarouqcss/dist/ifarouqcss-components.css';
 // Utilities only
 import 'ifarouqcss/dist/ifarouqcss-utilities.css';
 
-// Min version
-import 'ifarouqcss/dist/ifarouqcss-min.css';
 ```
 ---
 
@@ -595,6 +462,69 @@ Balanced intensity for versatile applications:
 - `dreamy-rainbow` - Yellow to coral rainbow
 - `candy-burst` - Pink to cream burst
 - `liquid-crystal` - Green to cyan crystal
+
+---
+
+## 🪟 Glassmorphism Effects
+
+### Basic Glass Effects
+
+**Standard Glass**:
+```html
+<div class="glass">
+  Frosted glass effect with blur
+</div>
+```
+
+**Dark Glass**:
+```html
+<div class="glass-dark">
+  Dark frosted glass for dark backgrounds
+</div>
+```
+
+**Strong Glass**:
+```html
+<div class="glass-strong">
+  More opaque glass effect
+</div>
+```
+
+**Subtle Glass**:
+```html
+<div class="glass-subtle">
+  Very light transparent glass
+</div>
+```
+
+### Liquid Glass with Gradient Tints
+
+True glassmorphism with gradient hints - use any of the 92 gradients!
+
+```html
+<!-- Original gradients -->
+<div class="liquid-glass-ocean-bliss">
+  <h2>Transparent Card</h2>
+  <p>Content visible through blurred glass</p>
+</div>
+
+<!-- Low gradients -->
+<div class="liquid-glass-sunset">
+  Semi-transparent sunset glass
+</div>
+
+<!-- Medium gradients -->
+<div class="liquid-glass-purple-dream">
+  Purple dream liquid glass
+</div>
+```
+
+**Features**:
+- 95% transparency
+- 20px blur effect
+- 15% opacity gradient tint
+- Glass-like borders
+- Elevated shadows
 
 ---
 
@@ -817,66 +747,42 @@ Apply border colors using `.border-{color}-{shade}`:
 
 ---
 
-## 🪟 Glassmorphism Effects
+## 💫 Shadow Utilities
 
-### Basic Glass Effects
-
-**Standard Glass**:
+### Basic Shadows
 ```html
-<div class="glass">
-  Frosted glass effect with blur
-</div>
+<div class="shadow-sm">Small shadow</div>
+<div class="shadow">Medium shadow</div>
+<div class="shadow-lg">Large shadow</div>
+<div class="shadow-none">No shadow</div>
 ```
 
-**Dark Glass**:
+### Colored Shadows
+
+Available for all 36 color families:
 ```html
-<div class="glass-dark">
-  Dark frosted glass for dark backgrounds
-</div>
+<div class="shadow-rose-500">Rose shadow</div>
+<div class="shadow-lg-aquamarine-600">Large aquamarine shadow</div>
+<div class="shadow-navy-400">Navy shadow</div>
 ```
 
-**Strong Glass**:
+### Special Shadows
 ```html
-<div class="glass-strong">
-  More opaque glass effect
-</div>
+<div class="shadow-gradient">Multi-color gradient shadow</div>
+<div class="shadow-glow">Glowing white shadow</div>
 ```
 
-**Subtle Glass**:
-```html
-<div class="glass-subtle">
-  Very light transparent glass
-</div>
-```
+---
 
-### Liquid Glass with Gradient Tints
-
-True glassmorphism with gradient hints - use any of the 92 gradients!
+## 🎭 Opacity Utilities
 
 ```html
-<!-- Original gradients -->
-<div class="liquid-glass-ocean-bliss">
-  <h2>Transparent Card</h2>
-  <p>Content visible through blurred glass</p>
-</div>
-
-<!-- Low gradients -->
-<div class="liquid-glass-sunset">
-  Semi-transparent sunset glass
-</div>
-
-<!-- Medium gradients -->
-<div class="liquid-glass-purple-dream">
-  Purple dream liquid glass
-</div>
+<div class="opacity-0">Invisible (0%)</div>
+<div class="opacity-25">25% opacity</div>
+<div class="opacity-50">50% opacity</div>
+<div class="opacity-75">75% opacity</div>
+<div class="opacity-100">100% opacity</div>
 ```
-
-**Features**:
-- 95% transparency
-- 20px blur effect
-- 15% opacity gradient tint
-- Glass-like borders
-- Elevated shadows
 
 ---
 
@@ -1038,45 +944,6 @@ Rounded badge alternatives:
 <div class="progress-gradient-sunrise">
   <div class="progress-bar" style="width: 75%"></div>
 </div>
-```
-
----
-
-## 💫 Shadow Utilities
-
-### Basic Shadows
-```html
-<div class="shadow-sm">Small shadow</div>
-<div class="shadow">Medium shadow</div>
-<div class="shadow-lg">Large shadow</div>
-<div class="shadow-none">No shadow</div>
-```
-
-### Colored Shadows
-
-Available for all 36 color families:
-```html
-<div class="shadow-rose-500">Rose shadow</div>
-<div class="shadow-lg-aquamarine-600">Large aquamarine shadow</div>
-<div class="shadow-navy-400">Navy shadow</div>
-```
-
-### Special Shadows
-```html
-<div class="shadow-gradient">Multi-color gradient shadow</div>
-<div class="shadow-glow">Glowing white shadow</div>
-```
-
----
-
-## 🎭 Opacity Utilities
-
-```html
-<div class="opacity-0">Invisible (0%)</div>
-<div class="opacity-25">25% opacity</div>
-<div class="opacity-50">50% opacity</div>
-<div class="opacity-75">75% opacity</div>
-<div class="opacity-100">100% opacity</div>
 ```
 
 ---
@@ -1349,6 +1216,981 @@ Choose a primary color family and stick with it throughout your design.
 
 ---
 
+## 💾 Build from Source 🆕
+
+### Prerequisites
+- SASS/SCSS compiler (Dart Sass recommended)
+- Node.js (optional, for npm scripts)
+
+### Setup
+
+1. **Download/Clone** the framework files to your project
+2. **Place all SCSS files** in a `scss/` directory:
+   ```
+    ifarouqcss/
+        ├── scss/
+            ├── ifarouqcss/
+            │    ├── _variables.scss
+            │    ├── _maps.scss
+            │    ├── _mixins.scss
+            │    ├── _components.scss
+            │    ├── _utilities.scss
+            │    └── ifarouqcss.scss
+            │
+            ├── ifarouqcss-components/
+            │    ├── _variables.scss
+            │    ├── _maps.scss
+            │    ├── _components.scss
+            │    └── ifarouqcss-components.scss
+            │
+            ├── ifarouqcss-lite/
+            │    ├── _variables.scss
+            │    ├── _maps-lite.scss
+            │    ├── _mixins.scss
+            │    ├── _components.scss
+            │    ├── _utilities.scss
+            │    └── ifarouqcss-lite.scss
+            │
+            ├── ifarouqcss-min/
+            │    ├── _variables.scss
+            │    ├── _maps-min.scss
+            │    ├── _mixins.scss
+            │    ├── _components.scss
+            │    ├── _utilities.scss
+            │    └── ifarouqcss-min.scss
+            │
+            └── ifarouqcss-utilities/
+                ├── _variables.scss
+                ├── _maps.scss
+                ├── _mixins.scss
+                ├── _components.scss
+                ├── _utilities.scss
+                └── ifarouqcss-utilities.scss
+   ```
+
+3. **Compile the framework**:
+
+    ```bash
+    # Full Version
+    sass scss/ifarouqcss/ifarouqcss.scss dist/ifarouqcss.css --style=compressed
+
+    # Min Version
+    sass scss/ifarouqcss-min/ifarouqcss-min.scss dist/ifarouqcss-min.css --style=compressed
+
+    # Lite Version
+   sass scss/ifarouqcss-lite/ifarouqcss-lite.scss dist/ifarouqcss-lite.css --style=compressed
+
+    # Components-Only Version
+    sass scss/ifarouqcss-components/ifarouqcss-components.scss dist/ifarouqcss-components.css --style=compressed
+
+    # Utilities-Only Version
+    sass scss/ifarouqcss-utilities/ifarouqcss-utilities.scss dist/ifarouqcss-utilities.css --style=compressed
+   ```
+
+
+4. **Link in your HTML**:
+    ```html
+    <!-- Full Version -->
+    <link rel="stylesheet" href="dist/ifarouqcss.css">
+
+    <!-- Min Version -->
+    <link rel="stylesheet" href="dist/ifarouqcss-min.css">
+
+    <!-- Lite Version -->
+    <link rel="stylesheet" href="dist/ifarouqcss-lite.css">
+
+    <!-- Component-Only Version -->
+    <link rel="stylesheet" href="dist/ifarouqcss-components.css">
+
+    <!-- Utilities-Only Version -->
+    <link rel="stylesheet" href="dist/ifarouqcss-utilities.css">
+   ```
+
+### Files Structure 🆕:
+
+  ```STRUCTURE
+    your-project/
+    ├── scss/
+    │   ├── ifarouqcss/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps.scss
+    │   │    ├── _mixins.scss
+    │   │    ├── _components.scss
+    │   │    ├── _utilities.scss
+    │   │    └── ifarouqcss.scss
+    │   │
+    │   ├── ifarouqcss-components/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps.scss
+    │   │    ├── _components.scss
+    │   │    └── ifarouqcss-components.scss
+    │   │
+    │   ├── ifarouqcss-lite/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps-lite.scss
+    │   │    ├── _mixins.scss
+    │   │    ├── _components.scss
+    │   │    ├── _utilities.scss
+    │   │    └── ifarouqcss-lite.scss
+    │   │
+    │   ├── ifarouqcss-min/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps-min.scss
+    │   │    ├── _mixins.scss
+    │   │    ├── _components.scss
+    │   │    ├── _utilities.scss
+    │   │    └── ifarouqcss-min.scss
+    │   │
+    │   └── ifarouqcss-utilities/
+    │        ├── _variables.scss
+    │        ├── _maps.scss
+    │        ├── _mixins.scss
+    │        ├── _components.scss
+    │        ├── _utilities.scss
+    │        └── ifarouqcss-utilities.scss
+    ├── dist/                           # Compiled CSS Files
+    │   ├── iFarouqcss.css
+    │   ├── ifarouqcss-components.css
+    │   ├── ifarouqcss-lite.css
+    │   ├── ifarouqcss-min.css
+    │   └── ifarouqcss-utilities.css
+    └── index.html                      # Your HTML
+  ```
+
+---
+
+## 🗂️ File Structure
+
+```
+your-project/
+    ├── scss/
+    │   ├── ifarouqcss/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps.scss
+    │   │    ├── _mixins.scss
+    │   │    ├── _components.scss
+    │   │    ├── _utilities.scss
+    │   │    └── ifarouqcss.scss
+    │   │
+    │   ├── ifarouqcss-components/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps.scss
+    │   │    ├── _components.scss
+    │   │    └── ifarouqcss-components.scss
+    │   │
+    │   ├── ifarouqcss-lite/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps-lite.scss
+    │   │    ├── _mixins.scss
+    │   │    ├── _components.scss
+    │   │    ├── _utilities.scss
+    │   │    └── ifarouqcss-lite.scss
+    │   │
+    │   ├── ifarouqcss-min/
+    │   │    ├── _variables.scss
+    │   │    ├── _maps-min.scss
+    │   │    ├── _mixins.scss
+    │   │    ├── _components.scss
+    │   │    ├── _utilities.scss
+    │   │    └── ifarouqcss-min.scss
+    │   │
+    │   └── ifarouqcss-utilities/
+    │        ├── _variables.scss
+    │        ├── _maps.scss
+    │        ├── _mixins.scss
+    │        ├── _components.scss
+    │        ├── _utilities.scss
+    │        └── ifarouqcss-utilities.scss
+    ├── dist/                           # Compiled CSS Files
+    │   ├── iFarouqcss.css
+    │   ├── ifarouqcss-components.css
+    │   ├── ifarouqcss-lite.css
+    │   ├── ifarouqcss-min.css
+    │   └── ifarouqcss-utilities.css       
+    └── index.html                      # Your HTML
+```
+
+---
+
+# 🧹 PurgeCSS Guide for iFarouqCSS
+
+Learn how to optimize your iFarouqCSS bundle by removing unused CSS classes and reducing file size dramatically!
+
+---
+
+## 📊 Why Use PurgeCSS?
+
+### The Problem
+
+When you use iFarouqCSS, you import the entire framework:
+
+| Version | Size | What You Get |
+|---------|------|--------------|
+| Full | 1.5MB | All colors, gradients, components, utilities |
+| Components | 1.1MB | All components + utilities |
+| Utilities | 400KB | All utility classes |
+| Min | 533KB | Essential features |
+| Lite | 287KB | Minimal features |
+
+**But you probably only use 10-20% of these classes!**
+
+### The Solution
+
+PurgeCSS scans your HTML/JS files and **removes unused CSS**, resulting in:
+
+```
+Before PurgeCSS: 1.5MB
+After PurgeCSS:  ~50-150KB (depending on usage)
+```
+
+**That's a 90%+ reduction!** 🎉
+
+---
+
+## 🚀 Quick Start
+
+## 1. Install PurgeCSS
+
+```bash
+npm install -D @fullhuman/postcss-purgecss
+```
+
+## 2. ⚙️ Configure (Choose Your Setup)
+
+- [Laravel + Vite](#laravel--vite-setup)
+- [React / Vue / Vite](#react--vue--vite-setup)
+- [Webpack](#webpack-setup)
+- [Standalone CLI](#standalone-cli-usage)
+- [Next.js](#nextjs-setup)
+
+---
+
+## 3. 🔧 Setup Guides
+
+### Laravel + Vite Setup
+
+**Step 1: Install Dependencies**
+
+```bash
+npm install -D @fullhuman/postcss-purgecss
+```
+
+**Step 2: Create `postcss.config.js`** (in your Laravel root)
+
+```javascript
+module.exports = {
+  plugins: [
+    require('@fullhuman/postcss-purgecss')({
+      content: [
+        './resources/**/*.blade.php',
+        './resources/**/*.js',
+        './resources/**/*.vue',
+      ],
+      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+      safelist: {
+        standard: [
+          // Keep these classes even if not found in templates
+          /^btn/,
+          /^bg-/,
+          /^text-/,
+          /^gradient/,
+        ],
+        deep: [
+          /modal/,
+          /dropdown/,
+          /tooltip/,
+        ],
+        greedy: [
+          /data-theme$/,
+        ]
+      }
+    }),
+    require('autoprefixer'),
+  ]
+}
+```
+
+**Step 3: Update `vite.config.js`**
+
+```javascript
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+
+export default defineConfig({
+    plugins: [
+        laravel({
+            input: ['resources/css/app.css', 'resources/js/app.js'],
+            refresh: true,
+        }),
+    ],
+    // PurgeCSS runs in production automatically via postcss.config.js
+});
+```
+
+**Step 4: Build for Production**
+
+```bash
+# Development (no purge)
+npm run dev
+
+# Production (with purge)
+npm run build
+```
+
+---
+
+### React / Vue / Vite Setup
+
+**Step 1: Install**
+
+```bash
+npm install -D @fullhuman/postcss-purgecss
+```
+
+**Step 2: Create `postcss.config.js`**
+
+```javascript
+const purgecss = require('@fullhuman/postcss-purgecss');
+
+module.exports = {
+  plugins: [
+    purgecss({
+      content: [
+        './index.html',
+        './src/**/*.{vue,js,ts,jsx,tsx}',
+      ],
+      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+      safelist: {
+        standard: [/^btn/, /^bg-/, /^text-/, /^gradient/],
+      }
+    }),
+    require('autoprefixer'),
+  ]
+}
+```
+
+**Step 3: Import iFarouqCSS in Your Entry File**
+
+```javascript
+// src/main.js or src/index.js
+import 'ifarouqcss/dist/ifarouqcss.css';
+import './App.vue'; // or your app
+```
+
+**Step 4: Build**
+
+```bash
+npm run build
+```
+
+---
+
+### Webpack Setup
+
+**Step 1: Install**
+
+```bash
+npm install -D @fullhuman/postcss-purgecss
+```
+
+**Step 2: Update `webpack.config.js`**
+
+```javascript
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const purgecss = require('@fullhuman/postcss-purgecss');
+
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  purgecss({
+                    content: [
+                      './src/**/*.html',
+                      './src/**/*.js',
+                      './src/**/*.jsx',
+                    ],
+                    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+                  }),
+                  require('autoprefixer'),
+                ],
+              },
+            },
+          },
+        ],
+      },
+    ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css',
+    }),
+  ],
+};
+```
+
+---
+
+### Next.js Setup
+
+**Step 1: Install**
+
+```bash
+npm install -D @fullhuman/postcss-purgecss
+```
+
+**Step 2: Create `postcss.config.js`**
+
+```javascript
+module.exports = {
+  plugins: [
+    require('@fullhuman/postcss-purgecss')({
+      content: [
+        './pages/**/*.{js,jsx,ts,tsx}',
+        './components/**/*.{js,jsx,ts,tsx}',
+        './app/**/*.{js,jsx,ts,tsx}',
+      ],
+      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+      safelist: {
+        standard: [/^btn/, /^bg-/, /^text-/],
+      }
+    }),
+    require('autoprefixer'),
+  ]
+}
+```
+
+**Step 3: Import in `_app.js`**
+
+```javascript
+// pages/_app.js
+import 'ifarouqcss/dist/ifarouqcss.css';
+
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+```
+
+---
+
+### Standalone CLI Usage
+
+**For static HTML projects without build tools:**
+
+**Step 1: Install Globally**
+
+```bash
+npm install -g purgecss
+```
+
+**Step 2: Create `purgecss.config.js`**
+
+```javascript
+module.exports = {
+  content: [
+    './src/**/*.html',
+    './src/**/*.js',
+  ],
+  css: [
+    './node_modules/ifarouqcss/dist/ifarouqcss.css'
+  ],
+  output: './dist/css/',
+  safelist: {
+    standard: [/^btn/, /^bg-/, /^text-/],
+  }
+}
+```
+
+**Step 3: Run PurgeCSS**
+
+```bash
+purgecss --config ./purgecss.config.js
+```
+
+---
+
+## 4. 🎯 Configuration Deep Dive
+
+### Content Paths
+
+Tell PurgeCSS where to find your HTML/JS files:
+
+```javascript
+content: [
+  './index.html',                    // HTML files
+  './src/**/*.{js,jsx,ts,tsx}',     // JavaScript/TypeScript
+  './src/**/*.vue',                  // Vue components
+  './resources/**/*.blade.php',      // Laravel Blade
+  './templates/**/*.html',           // Django/Flask templates
+]
+```
+
+---
+
+### Safelist (Keep Classes)
+
+Protect classes from being purged:
+
+```javascript
+safelist: {
+  // Exact class names
+  standard: ['btn', 'btn-primary', 'active'],
+  
+  // Regex patterns - keeps anything matching
+  standard: [
+    /^btn-/,        // btn-primary, btn-secondary, etc.
+    /^bg-/,         // bg-primary, bg-success, etc.
+    /^text-/,       // text-white, text-center, etc.
+    /^gradient/,    // gradient-sunset, gradient-ocean, etc.
+  ],
+  
+  // Deep - keeps children too
+  deep: [
+    /modal/,        // .modal, .modal-open, .modal-content, etc.
+    /dropdown/,     // .dropdown, .dropdown-menu, etc.
+  ],
+  
+  // Greedy - more aggressive matching
+  greedy: [
+    /data-theme$/,  // Keeps data attributes
+  ]
+}
+```
+
+---
+
+### Default Extractor
+
+Extracts class names from your code:
+
+```javascript
+// Standard extractor (recommended for iFarouqCSS)
+defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+
+// More aggressive (if classes are being removed incorrectly)
+defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
+```
+
+---
+
+## 5. 🛡️ iFarouqCSS Recommended Safelist
+
+**Use this safelist to protect common iFarouqCSS patterns:**
+
+```javascript
+safelist: {
+  standard: [
+    // Buttons
+    /^btn/,
+    
+    // Colors
+    /^bg-/,
+    /^text-/,
+    /^border-/,
+    
+    // Gradients
+    /^gradient/,
+    /^bg-gradient/,
+    
+    // Spacing
+    /^m-/,
+    /^mt-/,
+    /^mb-/,
+    /^ml-/,
+    /^mr-/,
+    /^mx-/,
+    /^my-/,
+    /^p-/,
+    /^pt-/,
+    /^pb-/,
+    /^pl-/,
+    /^pr-/,
+    /^px-/,
+    /^py-/,
+    
+    // Typography
+    /^fs-/,
+    /^fw-/,
+    /^text-/,
+    
+    // Display
+    /^d-/,
+    /^flex/,
+    /^grid/,
+    
+    // Responsive
+    /^sm:/,
+    /^md:/,
+    /^lg:/,
+    /^xl:/,
+  ],
+  deep: [
+    // Components with dynamic states
+    /modal/,
+    /dropdown/,
+    /tooltip/,
+    /card/,
+    /navbar/,
+    /form/,
+  ],
+}
+```
+
+---
+
+## 6. ⚠️ Common Issues & Solutions
+
+### Issue 1: Classes Being Removed
+
+**Problem:** PurgeCSS removes classes you're actually using.
+
+**Solution:**
+
+1. **Add to safelist:**
+   ```javascript
+   safelist: {
+     standard: ['my-class', /^prefix-/]
+   }
+   ```
+
+2. **Check your content paths:**
+   ```javascript
+   content: [
+     './src/**/*.html',  // Make sure this matches your files!
+   ]
+   ```
+
+3. **Use more aggressive extractor:**
+   ```javascript
+   defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
+   ```
+
+---
+
+### Issue 2: Dynamic Classes Not Working
+
+**Problem:** Classes generated by JavaScript are purged.
+
+```javascript
+// ❌ This won't work - PurgeCSS can't detect it
+const color = 'primary';
+element.className = `bg-${color}`;
+```
+
+**Solution:**
+
+1. **Use full class names:**
+   ```javascript
+   // ✅ This works
+   const classes = {
+     primary: 'bg-primary',
+     success: 'bg-success',
+   };
+   element.className = classes[color];
+   ```
+
+2. **Or add to safelist:**
+   ```javascript
+   safelist: {
+     standard: [/^bg-/]  // Keeps all bg- classes
+   }
+   ```
+
+---
+
+### Issue 3: Hover/Focus States Removed
+
+**Problem:** `:hover`, `:focus` states are being purged.
+
+**Solution:** Add to safelist:
+
+```javascript
+safelist: {
+  standard: [
+    /hover/,
+    /focus/,
+    /active/,
+    /disabled/,
+  ]
+}
+```
+
+---
+
+### Issue 4: File Size Still Large
+
+**Problem:** File size didn't reduce much after purging.
+
+**Checklist:**
+
+1. ✅ Did you run production build? (`npm run build`)
+2. ✅ Are your content paths correct?
+3. ✅ Is your safelist too broad?
+4. ✅ Are you actually using most classes?
+
+**Solution:** Narrow your safelist:
+
+```javascript
+// ❌ Too broad - keeps everything
+safelist: {
+  standard: [/.*/]  // Don't do this!
+}
+
+// ✅ Specific patterns only
+safelist: {
+  standard: [/^btn/, /^bg-/, /^text-/]
+}
+```
+
+---
+
+## 7. 📊 Before & After Examples
+
+### Example 1: Simple Website
+
+**Before PurgeCSS:**
+- iFarouqCSS Full: 1.5MB
+- Classes used: ~50
+- Unused CSS: ~95%
+
+**After PurgeCSS:**
+- Optimized: ~75KB
+- Reduction: 95% smaller!
+
+### Example 2: Documentation Site
+
+**Before PurgeCSS:**
+- iFarouqCSS Full: 1.5MB
+- Classes used: ~200
+- Unused CSS: ~85%
+
+**After PurgeCSS:**
+- Optimized: ~225KB
+- Reduction: 85% smaller!
+
+### Example 3: Full Application
+
+**Before PurgeCSS:**
+- iFarouqCSS Full: 1.5MB
+- Classes used: ~500
+- Unused CSS: ~60%
+
+**After PurgeCSS:**
+- Optimized: ~600KB
+- Reduction: 60% smaller!
+
+---
+
+## 8. 🎯 Best Practices
+
+### 1. **Only Purge in Production**
+
+```javascript
+// Good pattern
+const isProd = process.env.NODE_ENV === 'production';
+
+module.exports = {
+  plugins: [
+    isProd && require('@fullhuman/postcss-purgecss')({
+      // config
+    }),
+  ].filter(Boolean)
+}
+```
+
+### 2. **Start with Conservative Safelist**
+
+```javascript
+// Start here
+safelist: {
+  standard: [/^btn/, /^bg-/, /^text-/]
+}
+
+// Add more if needed
+```
+
+### 3. **Test After Purging**
+
+```bash
+# Build
+npm run build
+
+# Test your site thoroughly!
+# Check all pages, components, interactions
+```
+
+### 4. **Monitor File Sizes**
+
+```bash
+# Check before
+ls -lh node_modules/ifarouqcss/dist/ifarouqcss.css
+
+# Check after
+ls -lh dist/assets/*.css
+```
+
+---
+
+## 9. 🔍 Debugging PurgeCSS
+
+### Check What's Being Removed
+
+```javascript
+// Add verbose logging
+purgecss({
+  content: ['./src/**/*.html'],
+  rejected: true,  // Show removed selectors
+  variables: true, // Keep CSS variables
+})
+```
+
+### Test Specific Classes
+
+```bash
+# Search for class in purged file
+grep "btn-primary" dist/assets/app.*.css
+```
+
+### Compare Sizes
+
+```bash
+# Before
+du -h node_modules/ifarouqcss/dist/ifarouqcss.css
+
+# After
+du -h dist/assets/*.css
+```
+
+---
+
+## 10. ✅ Complete Laravel Example
+
+**Full working setup for Laravel + Vite + iFarouqCSS + PurgeCSS:**
+
+### 1. Install
+
+```bash
+npm install ifarouqcss
+npm install -D @fullhuman/postcss-purgecss
+```
+
+### 2. `resources/js/app.js`
+
+```javascript
+import './bootstrap';
+import 'ifarouqcss/dist/ifarouqcss.css';
+```
+
+### 3. `postcss.config.js`
+
+```javascript
+module.exports = {
+  plugins: [
+    require('@fullhuman/postcss-purgecss')({
+      content: [
+        './resources/**/*.blade.php',
+        './resources/**/*.js',
+        './resources/**/*.vue',
+      ],
+      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+      safelist: {
+        standard: [
+          /^btn/,
+          /^bg-/,
+          /^text-/,
+          /^gradient/,
+          /^m-/,
+          /^p-/,
+          /^fs-/,
+        ],
+        deep: [/modal/, /dropdown/],
+      }
+    }),
+    require('autoprefixer'),
+  ]
+}
+```
+
+### 4. Build
+
+```bash
+# Development (no purge)
+npm run dev
+
+# Production (with purge)
+npm run build
+```
+
+---
+
+## 11. 📚 Additional Resources
+
+- **PurgeCSS Docs:** https://purgecss.com/
+- **Vite + PostCSS:** https://vitejs.dev/guide/features.html#postcss
+- **Webpack + PostCSS:** https://webpack.js.org/loaders/postcss-loader/
+- **iFarouqCSS Docs:** https://ifarouqcss.ifarouq.dev/
+
+---
+
+## 12. 🎊 Summary
+
+**PurgeCSS can reduce iFarouqCSS from 1.5MB to 50-200KB!**
+
+**Quick Setup:**
+1. Install: `npm install -D @fullhuman/postcss-purgecss`
+2. Configure: Add `postcss.config.js`
+3. Build: `npm run build`
+4. Test: Make sure everything works!
+
+**Key Points:**
+- ✅ Only run in production
+- ✅ Use appropriate safelist
+- ✅ Test thoroughly after purging
+- ✅ Monitor file sizes
+
+**Happy optimizing, Dev!** 🚀
+
+--- 
+## 🤝 Customization
+
+### Add Your Own Gradient
+
+```scss
+// In _maps.scss
+$gradients: (
+  // ... existing gradients
+  "my-custom": linear-gradient(135deg, #yourcolor1 0%, #yourcolor2 100%)
+);
+```
+
+### Add a New Color Family
+
+```scss
+// In _variables.scss
+$custom-color: #123456;
+$custom-100: #ABCDEF;
+// ... add all 9 shades
+
+// In _maps.scss - add to $colors map
+$colors: (
+  // ... existing colors
+  "custom": $custom-color,
+  "custom-100": $custom-100,
+  // ... all shades
+);
+```
+
+---
+
 ## 🔥 What's New in v2.3.0 
 
 ### 🎁 Added - New Build Options
@@ -1370,8 +2212,13 @@ Choose a primary color family and stick with it throughout your design.
     - Utilities (400.8KB)
 - 🆕 ✨ Package.json configuration
 - 🆕 ✨ NPM distribution pipeline
-- 🆕 ✨ MIT License file
 
+### 🎁 Added - Self Optimization Guide
+- 🆕 ✨ **PurgeCSS (iFarouqCSS Optimizer)** - Guide
+    - You can choose any of iFarouqCSS Bundle/Version and you will still have lightweight site
+    - The hesitation of using iFarouqCSS due to it's large size, is no more now!
+    - All you need is, read about **PurgeCSS** in the Documentation, we have clearly explained everything you need
+    - We got you covered 🤝🏼
 
 ### 👨🏻‍💻 Changed
 - Optimized file structure for NPM distribution
@@ -1392,6 +2239,14 @@ Choose a primary color family and stick with it throughout your design.
 - Optimized for performance
 - Zero JavaScript dependencies
 - Cross-browser compatibility
+
+## Fixed
+- 🐛 Removed accidental self-dependency from package.json
+- ✅ Package now installs correctly via NPM
+
+### Technical
+- Cleaned up package.json configuration
+- No functional changes to CSS files
 
 ---
 
@@ -1435,113 +2290,6 @@ Choose a primary color family and stick with it throughout your design.
 
 ---
 
-## 📦 File Structure
-
-```
-your-project/
-    ├── scss/
-    │   ├── ifarouqcss/
-    │   │    ├── _variables.scss
-    │   │    ├── _maps.scss
-    │   │    ├── _mixins.scss
-    │   │    ├── _components.scss
-    │   │    ├── _utilities.scss
-    │   │    └── ifarouqcss.scss
-    │   │
-    │   ├── ifarouqcss-colors/
-    │   │    ├── _variables.scss
-    │   │    ├── _maps.scss
-    │   │    └── ifarouqcss-colors.scss
-    │   │
-    │   ├── ifarouqcss-components/
-    │   │    ├── _variables.scss
-    │   │    ├── _maps.scss
-    │   │    ├── _components.scss
-    │   │    └── ifarouqcss-components.scss
-    │   │
-    │   ├── ifarouqcss-lite/
-    │   │    ├── _variables.scss
-    │   │    ├── _maps-lite.scss
-    │   │    ├── _mixins.scss
-    │   │    ├── _components.scss
-    │   │    ├── _utilities.scss
-    │   │    └── ifarouqcss-lite.scss
-    │   │
-    │   ├── ifarouqcss-min/
-    │   │    ├── _variables.scss
-    │   │    ├── _maps-min.scss
-    │   │    ├── _mixins.scss
-    │   │    ├── _components.scss
-    │   │    ├── _utilities.scss
-    │   │    └── ifarouqcss-min.scss
-    │   │
-    │   └── ifarouqcss-utilities/
-    │        ├── _variables.scss
-    │        ├── _maps.scss
-    │        ├── _mixins.scss
-    │        ├── _components.scss
-    │        ├── _utilities.scss
-    │        └── ifarouqcss-utilities.scss
-    ├── dist/                           # Compiled CSS Files
-    │   ├── iFarouqcss.css
-    │   ├── ifarouqcss-colors.css
-    │   ├── ifarouqcss-components.css
-    │   ├── ifarouqcss-lite.css
-    │   ├── ifarouqcss-min.css
-    │   └── ifarouqcss-utilities.css       
-    └── index.html                      # Your HTML
-```
-
----
-
-## 🤝 Customization
-
-### Add Your Own Gradient
-
-```scss
-// In _maps.scss
-$gradients: (
-  // ... existing gradients
-  "my-custom": linear-gradient(135deg, #yourcolor1 0%, #yourcolor2 100%)
-);
-```
-
-### Add a New Color Family
-
-```scss
-// In _variables.scss
-$custom-color: #123456;
-$custom-100: #ABCDEF;
-// ... add all 9 shades
-
-// In _maps.scss - add to $colors map
-$colors: (
-  // ... existing colors
-  "custom": $custom-color,
-  "custom-100": $custom-100,
-  // ... all shades
-);
-```
-
----
-
-## 📄 License
-
-MIT License - free to use for personal and commercial projects.
-
----
-
-## 🎉 Credits
-
-**Created with ❤️ by iFarouq**
-
-Built with modern SASS/SCSS and cutting-edge CSS features.
-
-**Version**: 2.3.0  
-**Release Date**: February 01, 2026
-
----
-
 ## 📞 Support
 
 For issues, suggestions, or questions:
@@ -1551,10 +2299,6 @@ For issues, suggestions, or questions:
 - Twitter: https://x.com/iFarouqDev
 
 ---
-
-## 🌟 Show Your Support
-### Give a ⭐️ if this project helped you!
-
 
 ## 🗺️ Roadmap
 
@@ -1576,4 +2320,24 @@ For issues, suggestions, or questions:
 
 ---
 
+## 📄 License
+
+MIT License - free to use for personal and commercial projects.
+
+---
+
+## 🎉 Credits
+
 **Happy building! 🚀✨**
+
+**Created with ❤️ by iFarouq**
+
+Built with modern SASS/SCSS and cutting-edge CSS features.
+
+## 🌟 Show Your Support
+### Give a ⭐️ if this project helped you!
+
+**Version**: 2.3.0  
+**Release Date**: February 01, 2026
+
+MIT License © 2025 - 2026 iFarouqCSS - All rights reseved!
