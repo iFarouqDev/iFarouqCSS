@@ -216,8 +216,20 @@ We also offer **2 more indipendent options** to help you use the framework the w
 <link rel="stylesheet" href="dist/ifarouqcss-utilities.css">
 ```
 
-<p><code class="liquid-glass-glacier-blue rounded rounded" style="padding: 15px; font-weight: bolder;">< Happy Coding 🎉👨🏻‍💻 /></code></p>
+---
 
+<-- Other Build Options -->
+## 👨🏻‍💻⌥ Other Build Options 🆕 ##
+  **1. 👨🏻‍💻 Build From Source**
+    **Compile Guide for iFarouqCSS:** Learn how to compile and even customize any iFarouqCSS bundle the way you see feet, the way it will satisfy your appetite!
+
+  You want to learn more about it? [Click Here](#-build-from-source)
+
+  **2. 🧹 PurgeCSS (iFarouqCSS-Optimizer)**
+    **PurgeCSS Guide for iFarouqCSS:** Learn how to optimize your iFarouqCSS bundle by removing unused CSS classes and reducing file size dramatically!
+    You want to learn more about it? [Click Here](#-purgecss-guide-for-ifarouqcss)
+
+<p><code class="liquid-glass-glacier-blue rounded rounded" style="padding: 15px; font-weight: bolder;">< Happy Coding 🎉👨🏻‍💻 /></code></p>
 ---
 
 ## 📦 Installation
@@ -554,7 +566,7 @@ Apply backgrounds using `.bg-{color}-{shade}`:
 <div class="bg-aquamarine-300">Aquamarine background</div>
 ```
 
-### Hover Text Colors 🆕
+### Hover Text Colors
 
 Change text color on hover using `.text-hover-{color}-{shade}`:
 
@@ -572,7 +584,7 @@ Change text color on hover using `.text-hover-{color}-{shade}`:
 </nav>
 ```
 
-### Hover Background Colors 🆕
+### Hover Background Colors
 
 Change background on hover using `.bg-hover-{color}-{shade}`:
 
@@ -590,7 +602,7 @@ Change background on hover using `.bg-hover-{color}-{shade}`:
 </div>
 ```
 
-### Active Text Colors 🆕
+### Active Text Colors
 
 For navigation and links using `.text-active-{color}-{shade}`:
 
@@ -610,7 +622,7 @@ For navigation and links using `.text-active-{color}-{shade}`:
 
 The `.is-active` class can be toggled with JavaScript to show the active state.
 
-### Active Background Colors 🆕
+### Active Background Colors
 
 Background active states using `.bg-active-{color}-{shade}`:
 
@@ -691,7 +703,7 @@ Apply border colors using `.border-{color}-{shade}`:
 <div class="border-gradient-cosmic-fizz">Cosmic gradient border</div>
 ```
 
-## 📏 Spacing Utilities 🆕
+## 📏 Spacing Utilities
 
 ### Margin (m, mt, mb, ml, mr, my, mx)
 
@@ -841,7 +853,7 @@ Available for all 36 color families:
 
 ---
 
-## 📝 Typography 🆕
+## 📝 Typography
 
 ### Font Sizes (fs-1 to fs-12)
 
@@ -1216,7 +1228,7 @@ Choose a primary color family and stick with it throughout your design.
 
 ---
 
-## 💾 Build from Source 🆕
+## 💾 🆕 Build from Source
 
 ### Prerequisites
 - SASS/SCSS compiler (Dart Sass recommended)
@@ -1412,7 +1424,7 @@ your-project/
 
 ---
 
-# 🧹 PurgeCSS Guide for iFarouqCSS
+# 🧹 🆕 PurgeCSS Guide for iFarouqCSS
 
 Learn how to optimize your iFarouqCSS bundle by removing unused CSS classes and reducing file size dramatically!
 
