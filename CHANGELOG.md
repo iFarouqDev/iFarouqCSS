@@ -79,26 +79,65 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.3.0] - 2026-02-01
 
-### ✨Added New Features
-- Component-only version (1.1MB)
-- Utilities-only version (401KB)
-- Full version with all features (1.5MB)
-- Min version with essential features (533KB)
-- Lite version for lightweight projects (287KB)
-- Colors-only version (8KB)
-- NPM package support
-- CDN support (jsDelivr, UNPKG)
+### 🎁 Added - New Build Options
+- 🆕 ✨ Colors-only version (8.2KB) - All colors, all gradients
+- 🆕 ✨ Min version (400.8KB) - 11 colors, 50 gradients
+- 🆕 ✨ Lite version (278.2KB) - 6 colors, 25 gradients
+- 🆕 ✨ Components-only version (1.1MB)
+- 🆕 ✨ Utilities-only version (1.1MB)
 
-### ⚜️Improvements
+### 🎁 Added - New Installation Options
+- 🆕 ✨ **NPM Package Support** - Install via `npm install ifarouqcss`
+- 🆕 ✨ **CDN Support** - Available on jsDelivr and UNPKG
+- 🆕 ✨ Published all 6 versions above to NPM:
+    - Full (1.5MB)
+    - Colors (8.2KB)
+    - Min (533.2KB)
+    - Lite (287.2KB)
+    - Components (1.1MB)
+    - Utilities (400.8KB)
+- 🆕 ✨ Package.json configuration
+- 🆕 ✨ NPM distribution pipeline
+- 🆕 ✨ MIT License file
+
+### 🎁 Added - Self Optimization Guide
+- 🆕 ✨ **PurgeCSS (iFarouqCSS Optimizer)** - Guide
+    - You can choose any of iFarouqCSS Bundle/Version and you will still have lightweight site
+    - The hesitation of using iFarouqCSS due to it's large size, is no more now!
+    - All you need is, read about **PurgeCSS** in the Documentation, we have clearly explained everything you need
+    - We got you covered 🤝🏼
+
+### 👨🏻‍💻 Changed
+- Optimized file structure for NPM distribution
+- Files naming conventions for easy access
+- Documentation migrated from SPA to multi-page layout
+
+
+### 🎨 Improvements
+- Updated README with NPM and CDN installation instructions
 - Interactive documentation site Repolished
-- Version Tree -- For more Easy-Access
+- Improved navigation and discoverability
+- Enhanced code examples
+- Better mobile documentation experience
 
-### Features
+### ✨ New Features
 - Modular architecture - use only what you need
 - Production-ready
 - Optimized for performance
 - Zero JavaScript dependencies
 - Cross-browser compatibility
+
+---
+
+## [2.3.1] - 2026-02-03
+
+### Fixed
+- 🐛 Removed accidental self-dependency from package.json
+- ✅ Package now installs correctly via NPM
+
+### Technical
+- Cleaned up package.json configuration
+- No functional changes to CSS files
 
 ---
 
