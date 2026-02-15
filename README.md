@@ -55,7 +55,6 @@ We also offer **2 more indipendent options** to help you use the framework the w
 | **[Full](#-full-version)** | 1.5MB | 36 (324 shades) | 92 | ✅ | ✅ | Development, testing all features |
 | **[Min](#-min-version)** | 533.2KB | 11 (99 shades) | 50 | ✅ | ✅ | Most production websites ⭐ |
 | **[Lite](#-lite-version)** | 287.2KB | 6 (54 shades) | 25 | ✅ | ✅ | Smaller sites, best performance ⭐ |
-| **[Colors](#-colors-version)** | 8.2KB | All | All | ❌ | ❌ | Compatible with every sites, light-weight, colors experience ⭐ |
 | **[Components](#-components-version)** | 1.1MB | All | All | ✅ | ❌ | Combine with Tailwind/utilities |
 | **[Utilities](#-utilities-version)** | 400.8KB | All | All | ❌ | ✅ | Combine with Bootstrap/components |
 
@@ -72,7 +71,7 @@ We also offer **2 more indipendent options** to help you use the framework the w
 
 ## ♾️ Full Version
 
-**Size**: 1.5MB | **Colors**: 36 families (324 shades) | **Gradients**: 92
+**Size**: 1.5MB | ****: 36 families (324 shades) | **Gradients**: 92
 
 ### Includes:
 - All 36 color families with 9 shades each
